@@ -168,7 +168,7 @@ extern GameLogic *TheGameLogic;
 
 extern unsigned int g_012F7718;
 extern unsigned int g_012F771C;
-extern unsigned int g_012F7728;
+unsigned int g_012F7728 = 0;	// retail .data, owned here (data_rows.csv)
 
 #define BFMEStallStartTime g_012F7718
 #define BFMELastAdvanceTime g_012F771C

@@ -203,7 +203,7 @@ public:
 								///< ILT 0x0001B5DB
 };
 
-extern Glo012F7090Type *Glo012F7090;
+Glo012F7090Type *Glo012F7090 = 0;	// retail .data, owned here (data_rows.csv)
 
 class GameInfo
 {

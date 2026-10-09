@@ -75,7 +75,7 @@ public:
 extern Display *TheDisplay;
 extern char g_bfmeInitDYB;
 extern unsigned __int64 g_bfmeElapsedDYB;
-extern unsigned __int64 g_012ED898;
+unsigned __int64 g_012ED898 = 0;	// retail .data, owned here (data_rows.csv)
 extern "C" __declspec(dllimport) UnsignedInt __stdcall timeGetTime( void );
 
 extern "C" __declspec(noinline) UnsignedInt __stdcall bfme_timeGetTime( void )

@@ -120,7 +120,9 @@ public:
 };
 
 extern __int64 Counter0040F780;
-extern volatile __int64 g_012F1290;
+// 0x012F1290 is owned by MovieFrame0040E9E0.cpp as ?Threshold0040E9E0@@3_JA; read it under that name.
+extern "C" volatile __int64 __identifier("?Threshold0040E9E0@@3_JA");
+#define g_012F1290 __identifier("?Threshold0040E9E0@@3_JA")
 extern double Interval0040F780;
 extern void j_0004ab1f();
 

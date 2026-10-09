@@ -10,7 +10,7 @@ struct ResolutionAccess007833E0 : DX8Wrapper { using DX8Wrapper::Get_Device_Reso
 struct Rva007845D0Transform { float m[6]; };
 extern Rva007845D0Transform g_Rva00F0692CTransform;
 extern Rva007845D0Transform g_Rva00F06914Transform;
-extern int g_Rva0130699CDimensions[4];
+int g_Rva0130699CDimensions[4];	// retail .data, owned here (data_rows.csv)
 extern float g_Rva012BB86CScaleX, g_Rva012BB870ScaleY;
 extern float g_Rva012BB874InverseX, g_Rva012BB878InverseY;
 extern int g_Rva012BB860TransformMode;
