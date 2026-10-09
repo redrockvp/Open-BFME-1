@@ -104,7 +104,7 @@ struct ParticleSystemFieldTable
 };
 
 extern unsigned char g_012F6850[];
-extern volatile unsigned char g_012F6923;
+volatile unsigned char g_012F6923 = 0;	// retail .data, owned here (data_rows.csv)
 extern const ParticleSystemFieldTable g_0110F92C;
 extern "C" const ParticleSystemFieldTable
 	__identifier("?g_0110F92C@@3UParticleSystemFieldTable@@B") =

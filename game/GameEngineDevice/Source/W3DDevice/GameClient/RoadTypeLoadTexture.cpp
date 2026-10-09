@@ -128,7 +128,7 @@ extern GlobalData *TheWritableGlobalData;
 
 #define BFME_GLOBAL_DATA TheWritableGlobalData
 
-extern Bool g_012F9C31;
+Bool g_012F9C31 = 0;	// retail .data, owned here (data_rows.csv)
 
 #define BFME_ROAD_DYNAMIC g_012F9C31
 

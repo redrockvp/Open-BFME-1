@@ -34,7 +34,7 @@ extern "C" RvaModuleHandle821D0 (__stdcall *g_rva0130E988LoadLibraryA)(
 extern void *rva00882140PatchAllModules(const char *dllName,
 	const char *functionName, void *replacement);
 
-extern unsigned char g_0130E990;
+unsigned char g_0130E990 = 0;	// retail .data, owned here (data_rows.csv)
 extern RvaLoadLibraryW821D0 g_0130E984;
 extern RvaLoadLibraryExA821D0 g_0130E980;
 extern RvaLoadLibraryExW821D0 g_0130E97C;
