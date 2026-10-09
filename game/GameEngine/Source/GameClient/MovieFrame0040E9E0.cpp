@@ -50,7 +50,10 @@ struct MovieControl0040F780 { virtual void v00(); virtual void v04();virtual voi
 class GameWindowManager;
 extern GameWindowManager *TheWindowManager;
 extern Engine0040E9E0 *EngineGlobal0040E9E0;
-extern __int64 Previous0040E9E0, Current0040E9E0, Threshold0040E9E0, Elapsed0040E9E0;
+__int64 Elapsed0040E9E0 = 0;	// retail .data, owned here (data_rows.csv)
+__int64 Threshold0040E9E0 = 0;	// retail .data, owned here (data_rows.csv)
+__int64 Current0040E9E0 = 0;	// retail .data, owned here (data_rows.csv)
+__int64 Previous0040E9E0 = 0;	// retail .data, owned here (data_rows.csv)
 bool Trace0040E9E0 = false;	// retail .data, owned here (data_rows.csv)
 double Sum0040E9E0 = 0.0;	// retail .data, owned here (data_rows.csv)
 extern double Interval0040F780;

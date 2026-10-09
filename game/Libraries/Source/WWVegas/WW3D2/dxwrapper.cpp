@@ -346,8 +346,8 @@ extern char __cdecl bfmeUnlock1179();
 extern void __cdecl d_009064f0();
 extern volatile int g_bfmeOwnerVHM;
 extern volatile int g_bfmeDepthVHM;
-extern unsigned char g_0133F4A8[0x40];
-extern unsigned char g_0133F548[0x40];
+unsigned char g_0133F4A8[0x40];	// retail .data, owned here (data_rows.csv)
+unsigned char g_0133F548[0x40];	// retail .data, owned here (data_rows.csv)
 extern unsigned char g_0133F500[0x40];
 extern unsigned g_01340570;
 extern void *g_013405CC;

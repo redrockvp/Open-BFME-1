@@ -26,15 +26,15 @@ typedef void (__cdecl *Rva009AA260VerticalScale)(
 
 extern void __cdecl bfmeCopy(const void *, unsigned int, void *);
 
-extern Rva009AA260HorizontalScale g_01356DA4;
-extern Rva009AA260HorizontalScale g_01356EB0;
-extern Rva009AA260HorizontalScale g_01356E80;
-extern Rva009AA260VerticalScale g_01356E7C;
-extern Rva009AA260VerticalScale g_01356EA8;
-extern Rva009AA260VerticalScale g_01356E70;
-extern Rva009AA260VerticalScale g_01356E78;
-extern Rva009AA260VerticalScale g_01356E90;
-extern Rva009AA260VerticalScale g_01356EA4;
+Rva009AA260HorizontalScale g_01356DA4 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260HorizontalScale g_01356EB0 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260HorizontalScale g_01356E80 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356E7C = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356EA8 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356E70 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356E78 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356E90 = 0;	// retail .data, owned here (data_rows.csv)
+Rva009AA260VerticalScale g_01356EA4 = 0;	// retail .data, owned here (data_rows.csv)
 
 static void __cdecl Rva009A91C0NullScale(
 	unsigned char *, unsigned int, unsigned int)

@@ -66,16 +66,16 @@ struct BfmeKeyboardSystemEntryData
 };
 
 // These are the private KeyboardOptionsMenu objects in the retail compiland.
-extern NameKeyType g_012F3AAC;
-extern NameKeyType g_012F3ABC;
+NameKeyType g_012F3AAC = (NameKeyType)0;	// retail .data, owned here (data_rows.csv)
+NameKeyType g_012F3ABC = (NameKeyType)0;	// retail .data, owned here (data_rows.csv)
 extern GameWindow *g_012F3AC0;
-extern NameKeyType g_012F3AC4;
-extern GameWindow *g_012F3AC8;
-extern GameWindow *g_012F3AD0;
-extern GameWindow *g_012F3AD8;
-extern NameKeyType g_012F3ADC;
-extern GameWindow *g_012F3AE8;
-extern NameKeyType g_012F3AEC;
+NameKeyType g_012F3AC4 = (NameKeyType)0;	// retail .data, owned here (data_rows.csv)
+GameWindow *g_012F3AC8 = 0;	// retail .data, owned here (data_rows.csv)
+GameWindow *g_012F3AD0 = 0;	// retail .data, owned here (data_rows.csv)
+GameWindow *g_012F3AD8 = 0;	// retail .data, owned here (data_rows.csv)
+NameKeyType g_012F3ADC = (NameKeyType)0;	// retail .data, owned here (data_rows.csv)
+GameWindow *g_012F3AE8 = 0;	// retail .data, owned here (data_rows.csv)
+NameKeyType g_012F3AEC = (NameKeyType)0;	// retail .data, owned here (data_rows.csv)
 extern UnicodeString alt;
 extern UnicodeString ctrl;
 extern UnicodeString shift;
