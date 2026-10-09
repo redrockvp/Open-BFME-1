@@ -51,8 +51,8 @@ class GameWindowManager;
 extern GameWindowManager *TheWindowManager;
 extern Engine0040E9E0 *EngineGlobal0040E9E0;
 extern __int64 Previous0040E9E0, Current0040E9E0, Threshold0040E9E0, Elapsed0040E9E0;
-extern bool Trace0040E9E0;
-extern double Sum0040E9E0;
+bool Trace0040E9E0 = false;	// retail .data, owned here (data_rows.csv)
+double Sum0040E9E0 = 0.0;	// retail .data, owned here (data_rows.csv)
 extern double Interval0040F780;
 extern int Count0040E9E0;
 extern "C" int __identifier("?Count0040E9E0@@3HA") = 0;
