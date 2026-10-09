@@ -15690,9 +15690,7 @@ _luaT_eventname,0x01140A60
 _lua_setcallhook,0x00D96270
 _lua_setlinehook,0x00D96280
 _numServerMessageTypes,0x012C8AE0
-_piAuthenticateCDKeyCallbackA,0x00C60020
 _piBroadcastKeyChangedA,0x00C6B950
-_piChangeNickCallbackA,0x00C5FCD0
 _piChannelKickedA,0x00C6B570
 _piChannelMessageA,0x00C6B430
 _piChannelModeChangedA,0x00C6B9D0
@@ -15701,8 +15699,6 @@ _piChannelTopicChangedA,0x00C6B860
 _piChannelUserChangedNickA,0x00C6B810
 _piChannelUserJoinedA,0x00C6B5E0
 _piChannelUserPartedA,0x00C6B710
-_piChatDisconnectedA,0x00C6B2D0
-_piChatPrivateMessageA,0x00C6B360
 _piCleanseGlobalCacheMap,0x00C65820
 _piCleanseRoomCacheMap,0x00C65890
 _piConnectConnectCallback,0x00C5F1D0

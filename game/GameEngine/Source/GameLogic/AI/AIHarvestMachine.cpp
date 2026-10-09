@@ -50,9 +50,9 @@ protected:
 
 // C-linkage views of the retail vtables these constructors install (VA 0x010966F8,
 // 0x01096770, 0x010967E8 and 0x01096650); the alternate names define no table.
-extern "C" void *bfmeVftAIHarvestApproachSiteState[];
-extern "C" void *bfmeVftRva0015FDB0State[];
-extern "C" void *bfmeVftRva0015FE20State[];
+extern "C" void *__identifier("??_7Rva0015FD00State@@6B@")[];	// retail 0x010966F8
+extern "C" void *__identifier("??_7Rva0015FDB0State@@6B@")[];	// retail 0x01096770
+extern "C" void *__identifier("??_7Rva0015FE20State@@6B@")[];	// retail 0x010967E8
 extern "C" void *bfmeVftAIHarvestMachine[];
 #pragma comment(linker, "/alternatename:_bfmeVftAIHarvestApproachSiteState=??_7AIHarvestApproachSiteState@@6B@")
 #pragma comment(linker, "/alternatename:_bfmeVftRva0015FDB0State=??_7Rva0015FDB0State@@6B@")
@@ -68,7 +68,7 @@ public:
 Rva0015FD00State::Rva0015FD00State(void *machine)
 	: AIInternalMoveToState(machine, AsciiString("AIHarvestApproachSiteState"))
 {
-	m_vptr = bfmeVftAIHarvestApproachSiteState;
+	m_vptr = __identifier("??_7Rva0015FD00State@@6B@");
 }
 
 class Rva0015FDB0State : public Rva000A19E0StateBase
@@ -83,7 +83,7 @@ private:
 Rva0015FDB0State::Rva0015FDB0State(void *machine)
 	: Rva000A19E0StateBase(machine, AsciiString("AIHarvestPrepareSiteState"))
 {
-	m_vptr = bfmeVftRva0015FDB0State;
+	m_vptr = __identifier("??_7Rva0015FDB0State@@6B@");
 	m_stateField24 = 0;
 }
 
@@ -99,7 +99,7 @@ private:
 Rva0015FE20State::Rva0015FE20State(void *machine)
 	: Rva000A19E0StateBase(machine, AsciiString("AIHarvestWorkSiteState"))
 {
-	m_vptr = bfmeVftRva0015FE20State;
+	m_vptr = __identifier("??_7Rva0015FE20State@@6B@");
 	m_stateField24 = 0;
 }
 
