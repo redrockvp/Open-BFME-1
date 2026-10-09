@@ -53,6 +53,13 @@ class __single_inheritance FunctorTargetSingle
 };
 typedef void (FunctorTargetSingle::*FunctorMethodSingle)(void);
 
+// Retail binds the two shown-with-argument callbacks through ILT thunks
+// 0x0042450F (-> ?bfmeProvide@Rva0051B560Host, 0x0051B560) and 0x004442AB
+// (-> ?copyPreset@Rva0051B5F0Owner, 0x0051B5F0), named here by their ledger rows.
+extern "C" void __identifier("?j_0002450f@@YAXXZ")();
+extern "C" void __identifier("?j_000442ab@@YAXXZ")();
+
+
 struct FunctorBindingSingle
 {
 	FunctorBindingSingle(FunctorMethodSingle method, FunctorTargetSingle *target)
@@ -221,8 +228,6 @@ public:
 	virtual void slot10();
 	virtual void slot14();
 
-	void Rva0051B560(void *argument, void *params, bool flag);
-	void Rva0051B5F0(void *argument, void *params, bool flag);
 
 private:
 	WindowLayout *m_layout10;
@@ -257,16 +262,18 @@ LoadScreen0051BF30::LoadScreen0051BF30(unsigned int mode)
 	for (int player = 0; player < 8; ++player)
 	{
 		name.format("GameLoading:PlayerColor:%d", player);
+		union { void (*fn)(); FunctorMethodSingle call; } u_Rva0051B560 = { __identifier("?j_0002450f@@YAXXZ") };
 		g_rva012F19E8WindowManager->bindShownWithArg(name, (void *)player,
 			Rva0050F920FunctorHolder(FunctorBindingSingle(
-				reinterpret_cast<FunctorMethodSingle>(&LoadScreen0051BF30::Rva0051B560),
+				u_Rva0051B560.call,
 				(FunctorTargetSingle *)this)));
 	}
 	{
 		AsciiString typeName("GameLoadingType");
+		union { void (*fn)(); FunctorMethodSingle call; } u_Rva0051B5F0 = { __identifier("?j_000442ab@@YAXXZ") };
 		g_rva012F19E8WindowManager->bindShownWithArg(typeName, 0,
 			Rva0050F920FunctorHolder(FunctorBindingSingle(
-				reinterpret_cast<FunctorMethodSingle>(&LoadScreen0051BF30::Rva0051B5F0),
+				u_Rva0051B5F0.call,
 				(FunctorTargetSingle *)this)));
 	}
 
