@@ -334,8 +334,12 @@ struct SHADOW_DECAL_VERTEX
 
 #define SHADOW_DECAL_FVF 0x242
 
-extern ShadowDecalBuffer007B14A0 *shadowDecalVertexBufferD3D;
-extern ShadowDecalBuffer007B14A0 *shadowDecalIndexBufferD3D;
+// W3DProjectedShadow.cpp owns both pointers under their D3D types (data_rows.csv);
+// this TU reads them through its local buffer view under those names.
+extern "C" ShadowDecalBuffer007B14A0 *__identifier("?shadowDecalVertexBufferD3D@@3PAUIDirect3DVertexBuffer8@@A");
+extern "C" ShadowDecalBuffer007B14A0 *__identifier("?shadowDecalIndexBufferD3D@@3PAUIDirect3DIndexBuffer8@@A");
+#define shadowDecalVertexBufferD3D __identifier("?shadowDecalVertexBufferD3D@@3PAUIDirect3DVertexBuffer8@@A")
+#define shadowDecalIndexBufferD3D __identifier("?shadowDecalIndexBufferD3D@@3PAUIDirect3DIndexBuffer8@@A")
 extern int nShadowDecalVertsInBuf;
 extern int nShadowDecalStartBatchVertex;
 extern int nShadowDecalIndicesInBuf;
