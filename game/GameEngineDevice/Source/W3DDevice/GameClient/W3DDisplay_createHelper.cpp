@@ -7,9 +7,9 @@
 
 // The three constructor arguments are retail incremental-link thunks, spelled
 // as the names the ledger gives those bodies.
-extern void j_0002fb3f(void);
+extern "C" void __identifier("?bfmeHeaderTemplateRegistryLanguage@@YA?AVHeaderTemplateString@@XZ")(void);	// ILT 0x0042FB3F
 extern void j_0003be9e(void);
-extern void j_0003dfb4(void);
+extern "C" void __identifier("?rva004349D0CreateSubtitleEntry@@YAPAVSubtitleEntry@@PAVAsciiString@@HABVUnicodeString@@IHHHHH@Z")(void);	// ILT 0x0043DFB4
 
 class Rva006FB780Product
 {
@@ -29,5 +29,5 @@ public:
 // ?create@Rva006FB780Host@@QAEPAVRva006FB780Product@@XZ
 Rva006FB780Product *Rva006FB780Host::create(void)
 {
-	return new Rva006FB780Product(j_0002fb3f, j_0003be9e, j_0003dfb4);
+	return new Rva006FB780Product(__identifier("?bfmeHeaderTemplateRegistryLanguage@@YA?AVHeaderTemplateString@@XZ"), j_0003be9e, __identifier("?rva004349D0CreateSubtitleEntry@@YAPAVSubtitleEntry@@PAVAsciiString@@HABVUnicodeString@@IHHHHH@Z"));
 }
