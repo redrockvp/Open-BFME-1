@@ -27,6 +27,10 @@
 //																																						//
 ////////////////////////////////////////////////////////////////////////////////
 
+// CommandXlat.h declares pickAndPlayUnitVoiceResponse returning void; the
+// matched BFME body (CommandXlatVoice.cpp, 0x005AA450) returns bool, so the
+// header's declaration is shadowed and the linked name declared below.
+#define pickAndPlayUnitVoiceResponse pickAndPlayUnitVoiceResponse_zhDecl
 #include "PreRTS.h"
 #include "Common/Player.h"
 #include "Common/PlayerList.h"
@@ -40,6 +44,9 @@
 #include "GameClient/ControlBar.h"
 #include "GameClient/Mouse.h"
 #include "GameClient/CommandXlat.h"
+#undef pickAndPlayUnitVoiceResponse
+bool pickAndPlayUnitVoiceResponse(const DrawableList *list, GameMessage::Type msgType,
+	PickAndPlayInfo *info = 0);
 
 // BFME interface slices: these offsets differ from the available ZH headers.
 // Each used slot is witnessed in this callback; see astra_M/LAYOUTS.md.
