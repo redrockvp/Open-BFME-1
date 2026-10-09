@@ -622,7 +622,7 @@ void rva0052B2A0();
 void rva00569D80();
 void Rva004C1040(int);
 int Rva00459060(bool);
-int rva005A9B00(Object*,void*);
+extern "C" int __identifier("?bfmeGo1000B@@YAHPAVBfmeThing1000@@PAUBfmeSlot1000@@@Z")(Object*,void*);	// ILT 0x00428ACE -> matched 0x005A9B00
 void pickAndPlayUnitVoiceResponse(const DrawableList*,GameMessage::Type,PickAndPlayInfo* = 0);
 
 class CommandTranslator { public:
@@ -643,8 +643,8 @@ static Object* iNeedAHero(Object* previous)
  Player* localPlayer=ThePlayerList->getLocalPlayer();
  if(!localPlayer) return 0;
  HeroHolder holder; holder.hero=0; holder.previous=previous;
- localPlayer->iterateObjects(rva005A9B00,&holder);
- if(!holder.hero && previous) { holder.previous=0; localPlayer->iterateObjects(rva005A9B00,&holder); }
+ localPlayer->iterateObjects(__identifier("?bfmeGo1000B@@YAHPAVBfmeThing1000@@PAUBfmeSlot1000@@@Z"),&holder);
+ if(!holder.hero && previous) { holder.previous=0; localPlayer->iterateObjects(__identifier("?bfmeGo1000B@@YAHPAVBfmeThing1000@@PAUBfmeSlot1000@@@Z"),&holder); }
  return holder.hero;
 }
 

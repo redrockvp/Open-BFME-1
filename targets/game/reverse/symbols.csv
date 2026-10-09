@@ -90935,3 +90935,5 @@ _printf,0x009F7244,route=MSVCR71.dll!printf; IAT 0x01359464; CRT printf import j
 ?_bfme_initGadgets@BfmeAptScreenOnlineChat@@QAEXPBDPAXPAVGameWindow@@@Z,0x00047258,route=0x00534A60; ILT jmp to the matched _bfme_initGadgets body; OnlineChatConstructor.cpp stores this thunk address
 ?bfmeHeaderTemplateRegistryLanguage@@YA?AVHeaderTemplateString@@XZ,0x0002FB3F,route=0x004349A0; ILT jmp to the matched bfmeHeaderTemplateRegistryLanguage body; W3DDisplay_createHelper.cpp stores this thunk address
 ?rva004349D0CreateSubtitleEntry@@YAPAVSubtitleEntry@@PAVAsciiString@@HABVUnicodeString@@IHHHHH@Z,0x0003DFB4,route=0x004349D0; ILT jmp to the matched rva004349D0CreateSubtitleEntry body; W3DDisplay_createHelper.cpp stores this thunk address
+?bfmeCheckDJ@@YAHPAVBfmeThingDJ@@@Z,0x0002DC95,route=0x0036CFD0; ILT jmp to the matched bfmeCheckDJ body; Rva00370730CastleMemberState.cpp stores this thunk address
+?bfmeGo1000B@@YAHPAVBfmeThing1000@@PAUBfmeSlot1000@@@Z,0x00028ACE,route=0x005A9B00; ILT jmp to the matched bfmeGo1000B body; CommandXlat.cpp passes this thunk to iterateObjects
