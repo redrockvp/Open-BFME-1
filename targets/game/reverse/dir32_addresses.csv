@@ -12611,16 +12611,7 @@ name,va
 ?rva0010f820UserCode@@3PBDB,0x012ABFD0
 ?rva0010f820UserMaps@@3PBDB,0x012ABFC4
 ?rva00413d31@BfmeAptScreenOnlineChat@@QAEXXZ,0x00413D31
-?rva00418886@BfmeAptScreenOnlineChat@@QAEXXZ,0x00418886
-?rva0041b3dd@BfmeAptScreenOnlineChat@@QAEXXZ,0x0041B3DD
-?rva004286be@BfmeAptScreenOnlineChat@@QAEXXZ,0x004286BE
-?rva00429249@BfmeAptScreenOnlineChat@@QAEXXZ,0x00429249
-?rva00429d61@BfmeAptScreenOnlineChat@@QAEXXZ,0x00429D61
-?rva0043a44a@BfmeAptScreenOnlineChat@@QAEXXZ,0x0043A44A
-?rva0043ff76@BfmeAptScreenOnlineChat@@QAEXXZ,0x0043FF76
 ?rva00443F60@@YA_NPAVDrawable@@PAX@Z,0x00843F60
-?rva00447258@BfmeAptScreenOnlineChat@@QAEXXZ,0x00447258
-?rva0044a5ca@BfmeAptScreenOnlineChat@@QAEXXZ,0x0044A5CA
 ?rva0049ca90@@YAXPAVGameWindow@@PAVWinInstanceData@@I@Z,0x0089CA90
 ?rva004BBFC0_audio@@3PAVRva004BBFC0Audio@@A,0x012ED668
 ?rva004BBFC0_emptyString@@3VAsciiString@@B,0x01336E50
@@ -12638,9 +12629,6 @@ name,va
 ?rva005731D0@BfmeAptScreenScoreScreen@@QAEXPBD@Z,0x00435639
 ?rva005731E0@BfmeAptScreenScoreScreen@@QAEXHPAD_N@Z,0x0043A1E3
 ?rva005780E0@BfmeAptScreenScoreScreen@@QAEXPBD@Z,0x0043936A
-?rva006fb780_fn_a@@YAXXZ,0x0042FB3F
-?rva006fb780_fn_b@@YAXXZ,0x0043BE9E
-?rva006fb780_fn_c@@YAXXZ,0x0043DFB4
 ?rva00813A40@@YAXXZ,0x00C13A40
 ?rva00813CF0@@YAXXZ,0x00C13CF0
 ?rva00906340CellCtor@@YAXPAX@Z,0x004110D6
