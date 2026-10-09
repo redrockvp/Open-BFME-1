@@ -92,7 +92,8 @@ public:
 
 extern Rva008AE770Stack Rva008AE770TheStack;
 
-extern int key013384C0, key013384C8;
+int key013384C8 = 0;	// retail .data, owned here (data_rows.csv)
+int key013384C0 = 0;	// retail .data, owned here (data_rows.csv)
 
 class BfmeTab1024
 {

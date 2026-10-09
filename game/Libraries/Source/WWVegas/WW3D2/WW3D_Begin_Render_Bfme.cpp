@@ -92,8 +92,8 @@ private:
 	static bool RecordNextFrame;
 };
 
-extern int g_0133F414;
-extern int g_0133F41C;
+int g_0133F414 = 0;	// retail .data, owned here (data_rows.csv)
+int g_0133F41C = 0;	// retail .data, owned here (data_rows.csv)
 
 bool WW3D::Begin_Render(bool clear, bool clearz, const Vector3 &color,
 	float dest_alpha, void (*network_callback)(void))

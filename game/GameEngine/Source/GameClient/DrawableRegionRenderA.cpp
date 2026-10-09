@@ -71,15 +71,15 @@ public:
 extern UnsignedInt g_012F13AC;
 extern UnsignedInt g_012F13B0;
 extern UnsignedInt g_012F13B4;
-extern UnsignedInt g_012F13B8;
-extern UnsignedInt g_012F13BC;
-extern UnsignedInt g_012F13C0;
-extern UnsignedInt g_012F13C4;
-extern UnsignedInt g_012F13C8;
-extern UnsignedInt g_012F13CC;
-extern UnsignedInt g_012F13D0;
-extern UnsignedInt g_012F13D4;
-extern UnsignedInt g_012F13D8;
+UnsignedInt g_012F13B8 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13BC = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13C0 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13C4 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13C8 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13CC = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13D0 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13D4 = 0;	// retail .data, owned here (data_rows.csv)
+UnsignedInt g_012F13D8 = 0;	// retail .data, owned here (data_rows.csv)
 
 extern Display *TheDisplay;
 extern void j_00048b26();

@@ -7,10 +7,10 @@
 extern "C" __declspec(dllimport) unsigned long __stdcall timeGetTime(void);
 void W3DRadarResetLock(void);
 
-extern unsigned long g_013405D4;
+unsigned long g_013405D4 = 0;	// retail .data, owned here (data_rows.csv)
 extern const char *g_013405D8;
-extern int g_013405DC;
-extern unsigned long g_013405E0;
+int g_013405DC = 0;	// retail .data, owned here (data_rows.csv)
+unsigned long g_013405E0 = 0;	// retail .data, owned here (data_rows.csv)
 
 class DX8Wrapper
 {
