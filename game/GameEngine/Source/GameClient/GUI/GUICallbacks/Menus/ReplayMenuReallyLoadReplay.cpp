@@ -91,11 +91,11 @@ extern Shell *TheShell;
 
 // ReplayMenu.cpp's two file-local cells are at these proven retail globals.
 // Neither address has a recorded symbol, so each keeps its address.
-extern GameWindow *g_012F4118;	// listboxReplayFiles
-extern GameWindow *g_012F410C;	// parentReplayMenu
+GameWindow *g_Va012F4118 = 0;	// listboxReplayFiles; retail .data, owned here (data_rows.csv)
+GameWindow *g_Va012F410C = 0;	// parentReplayMenu; retail .data, owned here (data_rows.csv)
 
-#define listboxReplayFiles (g_012F4118)
-#define parentReplayMenu (g_012F410C)
+#define listboxReplayFiles (g_Va012F4118)
+#define parentReplayMenu (g_Va012F410C)
 
 void GadgetListBoxGetSelected( GameWindow *listbox, Int *selected );
 UnicodeString GetReplayFilenameFromListbox( GameWindow *listbox, Int index );
