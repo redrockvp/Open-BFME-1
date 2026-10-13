@@ -8,25 +8,6 @@
 // strings, not members of the preceding vtables in the address index.
 // Match the existing declaration in GameEngine/Source/Common/BfmeConv492.cpp.
 extern "C" unsigned char bfmeTextBME[];
-extern "C" const char g_01132DD4[];
-extern "C" const char g_01134280[];
-extern "C" const char g_011343E4[];
-extern "C" const char g_011343DC[];
-extern "C" const char g_011343D4[];
-extern "C" const char g_01080294[];
-extern "C" const char g_011343CC[];
-extern "C" const char g_011343C4[];
-extern "C" const char g_011343BC[];
-extern "C" const char g_011343B4[];
-extern "C" const char g_011343AC[];
-extern "C" const char g_011343A4[];
-extern "C" const char g_0113439C[];
-extern "C" const char g_01134398[];
-extern "C" const char g_01134390[];
-extern "C" const char g_01134388[];
-extern "C" const char g_01134380[];
-extern "C" const char g_01134378[];
-extern "C" const char g_01134370[];
 
 // This TU uses the BFME Debug interface as a local ABI view.  The retail
 // exception logger dispatches the unsigned-long writer at +0x28, the string
@@ -84,7 +65,7 @@ public:
 
     Debug &operator<<(const Hex &)
     {
-        SetPrefixAndRadix(g_01132DD4, 16);
+        SetPrefixAndRadix("0x", 16);
         return *this;
     }
 
@@ -96,7 +77,7 @@ public:
 
     Debug &operator<<(const Bin &)
     {
-        SetPrefixAndRadix(g_01134280, 2);
+        SetPrefixAndRadix("%", 2);
         return *this;
     }
 
@@ -130,25 +111,25 @@ void DebugExceptionhandler::LogRegisters(Debug &dbg, struct _EXCEPTION_POINTERS 
 
     dbg << Debug::FillChar('0')
         << Debug::Hex()
-        << g_011343E4 << Debug::Width(8) << ctx.Eax
-        << g_011343DC << Debug::Width(8) << ctx.Ebx
-        << g_011343D4 << Debug::Width(8) << ctx.Ecx
-        << g_01080294
-        << g_011343CC << Debug::Width(8) << ctx.Edx
-        << g_011343C4 << Debug::Width(8) << ctx.Esi
-        << g_011343BC << Debug::Width(8) << ctx.Edi
-        << g_01080294
-        << g_011343B4 << Debug::Width(8) << ctx.Eip
-        << g_011343AC << Debug::Width(8) << ctx.Esp
-        << g_011343A4 << Debug::Width(8) << ctx.Ebp
-        << g_01080294
-        << g_0113439C << Debug::Bin() << Debug::Width(32) << ctx.EFlags
-        << Debug::Hex() << g_01080294
-        << g_01134398 << Debug::Width(4) << ctx.SegCs
-        << g_01134390 << Debug::Width(4) << ctx.SegDs
-        << g_01134388 << Debug::Width(4) << ctx.SegSs
-        << g_01134380 << Debug::Width(4) << ctx.SegEs
-        << g_01134378 << Debug::Width(4) << ctx.SegFs
-        << g_01134370 << Debug::Width(4) << ctx.SegGs
-        << g_01080294 << Debug::FillChar() << Debug::Dec();
+        << "EAX:" << Debug::Width(8) << ctx.Eax
+        << " EBX:" << Debug::Width(8) << ctx.Ebx
+        << " ECX:" << Debug::Width(8) << ctx.Ecx
+        << "\n"
+        << "EDX:" << Debug::Width(8) << ctx.Edx
+        << " ESI:" << Debug::Width(8) << ctx.Esi
+        << " EDI:" << Debug::Width(8) << ctx.Edi
+        << "\n"
+        << "EIP:" << Debug::Width(8) << ctx.Eip
+        << " ESP:" << Debug::Width(8) << ctx.Esp
+        << " EBP:" << Debug::Width(8) << ctx.Ebp
+        << "\n"
+        << "Flags:" << Debug::Bin() << Debug::Width(32) << ctx.EFlags
+        << Debug::Hex() << "\n"
+        << "CS:" << Debug::Width(4) << ctx.SegCs
+        << " DS:" << Debug::Width(4) << ctx.SegDs
+        << " SS:" << Debug::Width(4) << ctx.SegSs
+        << "\nES:" << Debug::Width(4) << ctx.SegEs
+        << " FS:" << Debug::Width(4) << ctx.SegFs
+        << " GS:" << Debug::Width(4) << ctx.SegGs
+        << "\n" << Debug::FillChar() << Debug::Dec();
 }

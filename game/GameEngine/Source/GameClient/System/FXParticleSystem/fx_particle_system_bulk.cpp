@@ -1,5 +1,26 @@
 // cl: /EHsc /Igame/GameEngine/Source/Common/System /Igame/GameEngine/Include/Common /Igame/Libraries/Source/WWVegas/WWMath /Igame/Libraries/Source/WWVegas/WWLib
 // readable body of ?freeZones@ZoneBlock@@IAEXXZ: game/GameEngine/Source/GameLogic/AI/AIPathfind.cpp
+// The CategoryModuleClass<N> vftables below are also instantiated by this TU; once
+// an instantiation is complete MSVC owns its vftable name and refuses the mangled
+// spelling, so each is declared and bound here before the header, and used through
+// its constant.
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$00@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass1Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$00@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$01@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass2Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$01@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$02@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass3Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$02@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$03@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass4Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$03@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$04@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass5Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$04@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$05@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass6Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$05@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$06@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass7Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$06@FXParticleSystem@@6B@");
+extern "C" void *__identifier("??_7?$CategoryModuleClass@$07@FXParticleSystem@@6B@")[];	// retail vftable
+static const void *const categoryModuleClass8Vftable = (const void *)__identifier("??_7?$CategoryModuleClass@$07@FXParticleSystem@@6B@");
+
 #include "fx_particle_system.h"
 #include "fx_particle_system_category.h"
 
@@ -57,9 +78,6 @@ extern "C" int __cdecl atexit(void (__cdecl *function)());
 #pragma comment(linker, "/alternatename:?g_vtbl_01110DF4@@3PAPAXA=_DefaultModuleTemplate6Concrete_vtbl8")
 #pragma comment(linker, "/alternatename:?g_vtbl_01110E08@@3PAPAXA=_DefaultModuleTemplate6Concrete_vtbl4")
 #pragma comment(linker, "/alternatename:?g_vtbl_01110E0C@@3PAPAXA=_DefaultModuleTemplate6Concrete_vtbl0")
-#pragma comment(linker, "/alternatename:?g_vtbl_01110EA4@@3PAPAXA=??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01110EB8@@3PAPAXA=??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B?$CategoryModuleInfo@$05@1@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01110EBC@@3PAPAXA=??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6BModuleTemplate@1@@")
 #pragma comment(linker, "/alternatename:?g_vtbl_01110FC0@@3PAPAXA=_DefaultModuleTemplate3Concrete_vtbl4")
 #pragma comment(linker, "/alternatename:?g_vtbl_01110FC4@@3PAPAXA=_DefaultModuleTemplate3Concrete_vtbl0")
 #pragma comment(linker, "/alternatename:?g_vtbl_01110FD8@@3PAPAXA=_DefaultModuleTemplate2Concrete_vtbl8")
@@ -80,53 +98,6 @@ extern "C" int __cdecl atexit(void (__cdecl *function)());
 #pragma comment(linker, "/alternatename:?g_vtbl_01111380@@3PAPAXA=_RenderObjectDrawConcrete_vtbl8")
 #pragma comment(linker, "/alternatename:?g_vtbl_01111394@@3PAPAXA=_RenderObjectDrawConcrete_vtbl4")
 #pragma comment(linker, "/alternatename:?g_vtbl_01111398@@3PAPAXA=_RenderObjectDrawConcrete_vtbl0")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111D9C@@3PAPAXA=??_7TailX005EB6B0@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111DB0@@3PAPAXA=??_7MidX005EB6B0@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111DB4@@3PAPAXA=??_7GenX005EB6B0@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111DD8@@3PAPAXA=??_7TailX005EB830@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111DEC@@3PAPAXA=??_7MidX005EB830@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111DF0@@3PAPAXA=??_7GenX005EB830@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E14@@3PAPAXA=??_7TailX005EB930@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E28@@3PAPAXA=??_7MidX005EB930@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E2C@@3PAPAXA=??_7GenX005EB930@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E50@@3PAPAXA=??_7TailX005EBA30@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E64@@3PAPAXA=??_7MidX005EBA30@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111E68@@3PAPAXA=??_7GenX005EBA30@@6B@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111EC8@@3PAPAXA=??_7Rva005EBCC0Object@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111EDC@@3PAPAXA=??_7Rva005EBCC0Object@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111EE0@@3PAPAXA=??_7Rva005EBCC0Object@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111FB0@@3PAPAXA=??_7BFMEDistLODClass@@6BRefCountClass@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111FC4@@3PAPAXA=??_7BFMEDistLODClass@@6BPersistClass@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111FC8@@3PAPAXA=??_7BFMEDistLODClass@@6BMultiListObjectClass@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01111FCC@@3PAPAXA=??_7BFMEDistLODClass@@6BCompositeRenderObjClassPrimary@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112034@@3PAPAXA=??_7Rva005EC600@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112048@@3PAPAXA=??_7Rva005EC600@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_0111204C@@3PAPAXA=??_7Rva005EC600@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112050@@3PAPAXA=??_7Rva005EC600@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011120B0@@3PAPAXA=??_7Rva005ECA20Object@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011120C4@@3PAPAXA=??_7Rva005ECA20Object@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011120C8@@3PAPAXA=??_7Rva005ECA20Object@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011120CC@@3PAPAXA=??_7Rva005ECA20Object@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112174@@3PAPAXA=??_7Rva005ECCC0@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112188@@3PAPAXA=??_7Rva005ECCC0@@6BV3Slot2W@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_0111218C@@3PAPAXA=??_7Rva005ECCC0@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112190@@3PAPAXA=??_7Rva005ECCC0@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011121A4@@3PAPAXA=??_7Rva005ED0D0@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011121B8@@3PAPAXA=??_7Rva005ED0D0@@6BV3Slot2W@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011121BC@@3PAPAXA=??_7Rva005ED0D0@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_011121C0@@3PAPAXA=??_7Rva005ED0D0@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112DD0@@3PAPAXA=??_7Rva005EC160@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112DE4@@3PAPAXA=??_7Rva005EC160@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112DE8@@3PAPAXA=??_7Rva005EC160@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112DEC@@3PAPAXA=??_7Rva005EC160@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E00@@3PAPAXA=??_7Rva005EC870@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E14@@3PAPAXA=??_7Rva005EC870@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E18@@3PAPAXA=??_7Rva005EC870@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E1C@@3PAPAXA=??_7Rva005EC870@@6BV3Slot0@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E30@@3PAPAXA=??_7Rva005ECF60@@6BV3Slot3@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E44@@3PAPAXA=??_7Rva005ECF60@@6BV3Slot2@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E48@@3PAPAXA=??_7Rva005ECF60@@6BV3Slot1@@@")
-#pragma comment(linker, "/alternatename:?g_vtbl_01112E4C@@3PAPAXA=??_7Rva005ECF60@@6BV3Slot0@@@")
 
 extern void *g_vtbl_01073744[];
 extern void *g_vtbl_01073758[];
@@ -184,9 +155,9 @@ extern void *g_vtbl_01110E64[];
 extern void *g_vtbl_01110E78[];
 extern void *g_vtbl_01110E8C[];
 extern void *g_vtbl_01110E90[];
-extern void *g_vtbl_01110EA4[];
-extern void *g_vtbl_01110EB8[];
-extern void *g_vtbl_01110EBC[];
+extern "C" void *__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B@")[];	// retail 0x01110EA4
+extern "C" void *__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B?$CategoryModuleInfo@$05@1@@")[];	// retail 0x01110EB8
+extern "C" void *__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6BModuleTemplate@1@@")[];	// retail 0x01110EBC
 extern "C" char DefaultModuleTemplate1Concrete_vtbl8;
 extern "C" char DefaultModuleTemplate1Concrete_vtbl4;
 extern "C" char DefaultModuleTemplate1Concrete_vtbl0;
@@ -247,41 +218,41 @@ extern void *g_vtbl_01111424[];
 extern void *g_vtbl_01111438[];
 extern void *g_vtbl_0111144C[];
 extern void *g_vtbl_01111450[];
-extern void *g_vtbl_01111D9C[];
-extern void *g_vtbl_01111DB0[];
-extern void *g_vtbl_01111DB4[];
-extern void *g_vtbl_01111DD8[];
-extern void *g_vtbl_01111DEC[];
-extern void *g_vtbl_01111DF0[];
-extern void *g_vtbl_01111E14[];
-extern void *g_vtbl_01111E28[];
-extern void *g_vtbl_01111E2C[];
-extern void *g_vtbl_01111E50[];
-extern void *g_vtbl_01111E64[];
-extern void *g_vtbl_01111E68[];
-extern void *g_vtbl_01111EC8[];
-extern void *g_vtbl_01111EDC[];
-extern void *g_vtbl_01111EE0[];
-extern void *g_vtbl_01111FB0[];
-extern void *g_vtbl_01111FC4[];
-extern void *g_vtbl_01111FC8[];
-extern void *g_vtbl_01111FCC[];
-extern void *g_vtbl_01112034[];
-extern void *g_vtbl_01112048[];
-extern void *g_vtbl_0111204C[];
-extern void *g_vtbl_01112050[];
-extern void *g_vtbl_011120B0[];
-extern void *g_vtbl_011120C4[];
-extern void *g_vtbl_011120C8[];
-extern void *g_vtbl_011120CC[];
-extern void *g_vtbl_01112174[];
-extern void *g_vtbl_01112188[];
-extern void *g_vtbl_0111218C[];
-extern void *g_vtbl_01112190[];
-extern void *g_vtbl_011121A4[];
-extern void *g_vtbl_011121B8[];
-extern void *g_vtbl_011121BC[];
-extern void *g_vtbl_011121C0[];
+extern "C" void *__identifier("??_7TailX005EB6B0@@6B@")[];	// retail 0x01111D9C
+extern "C" void *__identifier("??_7MidX005EB6B0@@6B@")[];	// retail 0x01111DB0
+extern "C" void *__identifier("??_7GenX005EB6B0@@6B@")[];	// retail 0x01111DB4
+extern "C" void *__identifier("??_7TailX005EB830@@6B@")[];	// retail 0x01111DD8
+extern "C" void *__identifier("??_7MidX005EB830@@6B@")[];	// retail 0x01111DEC
+extern "C" void *__identifier("??_7GenX005EB830@@6B@")[];	// retail 0x01111DF0
+extern "C" void *__identifier("??_7TailX005EB930@@6B@")[];	// retail 0x01111E14
+extern "C" void *__identifier("??_7MidX005EB930@@6B@")[];	// retail 0x01111E28
+extern "C" void *__identifier("??_7GenX005EB930@@6B@")[];	// retail 0x01111E2C
+extern "C" void *__identifier("??_7TailX005EBA30@@6B@")[];	// retail 0x01111E50
+extern "C" void *__identifier("??_7MidX005EBA30@@6B@")[];	// retail 0x01111E64
+extern "C" void *__identifier("??_7GenX005EBA30@@6B@")[];	// retail 0x01111E68
+extern "C" void *__identifier("??_7Rva005EBCC0Object@@6BV3Slot2@@@")[];	// retail 0x01111EC8
+extern "C" void *__identifier("??_7Rva005EBCC0Object@@6BV3Slot1@@@")[];	// retail 0x01111EDC
+extern "C" void *__identifier("??_7Rva005EBCC0Object@@6BV3Slot0@@@")[];	// retail 0x01111EE0
+extern "C" void *__identifier("??_7BFMEDistLODClass@@6BRefCountClass@@@")[];	// retail 0x01111FB0
+extern "C" void *__identifier("??_7BFMEDistLODClass@@6BPersistClass@@@")[];	// retail 0x01111FC4
+extern "C" void *__identifier("??_7BFMEDistLODClass@@6BMultiListObjectClass@@@")[];	// retail 0x01111FC8
+extern "C" void *__identifier("??_7BFMEDistLODClass@@6BCompositeRenderObjClassPrimary@@@")[];	// retail 0x01111FCC
+extern "C" void *__identifier("??_7Rva005EC600@@6BV3Slot3@@@")[];	// retail 0x01112034
+extern "C" void *__identifier("??_7Rva005EC600@@6BV3Slot2@@@")[];	// retail 0x01112048
+extern "C" void *__identifier("??_7Rva005EC600@@6BV3Slot1@@@")[];	// retail 0x0111204C
+extern "C" void *__identifier("??_7Rva005EC600@@6BV3Slot0@@@")[];	// retail 0x01112050
+extern "C" void *__identifier("??_7Rva005ECA20Object@@6BV3Slot3@@@")[];	// retail 0x011120B0
+extern "C" void *__identifier("??_7Rva005ECA20Object@@6BV3Slot2@@@")[];	// retail 0x011120C4
+extern "C" void *__identifier("??_7Rva005ECA20Object@@6BV3Slot1@@@")[];	// retail 0x011120C8
+extern "C" void *__identifier("??_7Rva005ECA20Object@@6BV3Slot0@@@")[];	// retail 0x011120CC
+extern "C" void *__identifier("??_7Rva005ECCC0@@6BV3Slot3@@@")[];	// retail 0x01112174
+extern "C" void *__identifier("??_7Rva005ECCC0@@6BV3Slot2W@@@")[];	// retail 0x01112188
+extern "C" void *__identifier("??_7Rva005ECCC0@@6BV3Slot1@@@")[];	// retail 0x0111218C
+extern "C" void *__identifier("??_7Rva005ECCC0@@6BV3Slot0@@@")[];	// retail 0x01112190
+extern "C" void *__identifier("??_7Rva005ED0D0@@6BV3Slot3@@@")[];	// retail 0x011121A4
+extern "C" void *__identifier("??_7Rva005ED0D0@@6BV3Slot2W@@@")[];	// retail 0x011121B8
+extern "C" void *__identifier("??_7Rva005ED0D0@@6BV3Slot1@@@")[];	// retail 0x011121BC
+extern "C" void *__identifier("??_7Rva005ED0D0@@6BV3Slot0@@@")[];	// retail 0x011121C0
 extern void *g_vtbl_011121D4[];
 extern void *g_vtbl_011121E8[];
 extern void *g_vtbl_011121EC[];
@@ -321,18 +292,18 @@ extern void *g_vtbl_01112404[4];
 extern void *g_vtbl_01112418[];
 extern void *g_vtbl_0111241C[];
 extern void *g_vtbl_01112420[];
-extern void *g_vtbl_01112DD0[];
-extern void *g_vtbl_01112DE4[];
-extern void *g_vtbl_01112DE8[];
-extern void *g_vtbl_01112DEC[];
-extern void *g_vtbl_01112E00[];
-extern void *g_vtbl_01112E14[];
-extern void *g_vtbl_01112E18[];
-extern void *g_vtbl_01112E1C[];
-extern void *g_vtbl_01112E30[];
-extern void *g_vtbl_01112E44[];
-extern void *g_vtbl_01112E48[];
-extern void *g_vtbl_01112E4C[];
+extern "C" void *__identifier("??_7Rva005EC160@@6BV3Slot3@@@")[];	// retail 0x01112DD0
+extern "C" void *__identifier("??_7Rva005EC160@@6BV3Slot2@@@")[];	// retail 0x01112DE4
+extern "C" void *__identifier("??_7Rva005EC160@@6BV3Slot1@@@")[];	// retail 0x01112DE8
+extern "C" void *__identifier("??_7Rva005EC160@@6BV3Slot0@@@")[];	// retail 0x01112DEC
+extern "C" void *__identifier("??_7Rva005EC870@@6BV3Slot3@@@")[];	// retail 0x01112E00
+extern "C" void *__identifier("??_7Rva005EC870@@6BV3Slot2@@@")[];	// retail 0x01112E14
+extern "C" void *__identifier("??_7Rva005EC870@@6BV3Slot1@@@")[];	// retail 0x01112E18
+extern "C" void *__identifier("??_7Rva005EC870@@6BV3Slot0@@@")[];	// retail 0x01112E1C
+extern "C" void *__identifier("??_7Rva005ECF60@@6BV3Slot3@@@")[];	// retail 0x01112E30
+extern "C" void *__identifier("??_7Rva005ECF60@@6BV3Slot2@@@")[];	// retail 0x01112E44
+extern "C" void *__identifier("??_7Rva005ECF60@@6BV3Slot1@@@")[];	// retail 0x01112E48
+extern "C" void *__identifier("??_7Rva005ECF60@@6BV3Slot0@@@")[];	// retail 0x01112E4C
 
 
 namespace _STL
@@ -480,12 +451,10 @@ public:
 
 
 // The shared header's INI view lacks these statics, so they are reached by alias.
-extern "C" void bfmeINIParseIndexList(INI *, void *, void *, const void *);
-#pragma comment(linker, "/alternatename:_bfmeINIParseIndexList=?parseIndexList@INI@@SAXPAV1@PAX1PBX@Z")
+extern "C" void __identifier("?parseIndexList@INI@@SAXPAV1@PAX1PBX@Z")(INI *, void *, void *, const void *);
 extern "C" void bfmeINIParseBool(INI *, void *, void *, const void *);
 #pragma comment(linker, "/alternatename:_bfmeINIParseBool=?parseBool@INI@@SAXPAV1@PAX1PBX@Z")
-extern "C" void bfmeINIParseAsciiString(INI *, void *, void *, const void *);
-#pragma comment(linker, "/alternatename:_bfmeINIParseAsciiString=?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z")
+extern "C" void __identifier("?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z")(INI *, void *, void *, const void *);
 extern "C" void bfmeINIParseCoord3D(INI *, void *, void *, const void *);
 #pragma comment(linker, "/alternatename:_bfmeINIParseCoord3D=?parseCoord3D@INI@@SAXPAV1@PAX1PBX@Z")
 extern "C" void bfmeINIParseUnsignedInt(INI *, void *, void *, const void *);
@@ -576,10 +545,10 @@ public:
     __forceinline RenderObjectUpdateModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((RenderObjectUpdateModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01112E4C;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01112E48;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01112E44;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_01112E30;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005ECF60@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005ECF60@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005ECF60@@6BV3Slot2@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7Rva005ECF60@@6BV3Slot3@@@");
     }
 
 private:
@@ -720,10 +689,10 @@ public:
     __forceinline DefaultModule0Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule0CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111FCC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111FC8;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111FC4;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_01111FB0;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7BFMEDistLODClass@@6BCompositeRenderObjClassPrimary@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7BFMEDistLODClass@@6BMultiListObjectClass@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7BFMEDistLODClass@@6BPersistClass@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7BFMEDistLODClass@@6BRefCountClass@@@");
     }
 
 private:
@@ -750,10 +719,10 @@ public:
     __forceinline DefaultModule1Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule1CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01112DEC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01112DE8;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01112DE4;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_01112DD0;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005EC160@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005EC160@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005EC160@@6BV3Slot2@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7Rva005EC160@@6BV3Slot3@@@");
     }
 
 private:
@@ -780,10 +749,10 @@ public:
     __forceinline DefaultModule2Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule2CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01112E1C;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01112E18;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01112E14;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_01112E00;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005EC870@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005EC870@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005EC870@@6BV3Slot2@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7Rva005EC870@@6BV3Slot3@@@");
     }
 
 private:
@@ -810,10 +779,10 @@ public:
     __forceinline DefaultModule3Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule3CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01112050;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_0111204C;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01112048;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_01112034;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005EC600@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005EC600@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005EC600@@6BV3Slot2@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7Rva005EC600@@6BV3Slot3@@@");
     }
 private:
     unsigned char m_storage[0x3c];
@@ -839,9 +808,9 @@ public:
     __forceinline DefaultModule6Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule6CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111DB4;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111DB0;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111D9C;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7GenX005EB6B0@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7MidX005EB6B0@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7TailX005EB6B0@@6B@");
     }
 private:
     unsigned char m_storage[0x1c];
@@ -867,10 +836,10 @@ public:
     __forceinline DefaultModule7Allocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((DefaultModule7CtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_011120CC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_011120C8;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_011120C4;
-        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)g_vtbl_011120B0;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005ECA20Object@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005ECA20Object@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005ECA20Object@@6BV3Slot2@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x1c) = (unsigned int)__identifier("??_7Rva005ECA20Object@@6BV3Slot3@@@");
     }
 
 private:
@@ -1337,9 +1306,9 @@ public:
     __forceinline ButterflyDrawModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((ButterflyDrawModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111E68;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111E64;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111E50;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7GenX005EBA30@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7MidX005EBA30@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7TailX005EBA30@@6B@");
     }
 
 private:
@@ -1356,9 +1325,9 @@ public:
     __forceinline LightningDrawTemplateAllocation()
     {
         ((LightningDrawTemplateCtorShim *)this)->construct();
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01110EBC;
-        *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)g_vtbl_01110EB8;
-        *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)g_vtbl_01110EA4;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6BModuleTemplate@1@@");
+        *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B?$CategoryModuleInfo@$05@1@@");
+        *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B@");
     }
 
 private:
@@ -1380,9 +1349,9 @@ public:
     __forceinline LightningDrawModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((LightningDrawModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111EE0;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111EDC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111EC8;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005EBCC0Object@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005EBCC0Object@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005EBCC0Object@@6BV3Slot2@@@");
     }
 
 private:
@@ -1428,9 +1397,9 @@ public:
     __forceinline QuadDrawModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((QuadDrawModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111E2C;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111E28;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111E14;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7GenX005EB930@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7MidX005EB930@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7TailX005EB930@@6B@");
     }
 
 private:
@@ -1481,9 +1450,9 @@ public:
     __forceinline StreakDrawModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((StreakDrawModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01111DF0;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_01111DEC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01111DD8;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7GenX005EB830@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7MidX005EB830@@6B@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7TailX005EB830@@6B@");
     }
 
 private:
@@ -1539,10 +1508,10 @@ public:
     __forceinline LifeEventModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((LifeEventModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_01112190;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_0111218C;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_01112188;
-        *(volatile unsigned int *)((unsigned char *)this + 0x20) = (unsigned int)g_vtbl_01112174;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005ECCC0@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005ECCC0@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005ECCC0@@6BV3Slot2W@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x20) = (unsigned int)__identifier("??_7Rva005ECCC0@@6BV3Slot3@@@");
     }
 
 private:
@@ -1574,10 +1543,10 @@ public:
     __forceinline TerrainCollisionModuleAllocation(TrackingPtr<ParticleSystem> &sys, const void *source)
     {
         ((TerrainCollisionModuleCtorShim *)this)->construct(sys, source);
-        *(volatile unsigned int *)this = (unsigned int)g_vtbl_011121C0;
-        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)g_vtbl_011121BC;
-        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)g_vtbl_011121B8;
-        *(volatile unsigned int *)((unsigned char *)this + 0x20) = (unsigned int)g_vtbl_011121A4;
+        *(volatile unsigned int *)this = (unsigned int)__identifier("??_7Rva005ED0D0@@6BV3Slot0@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x14) = (unsigned int)__identifier("??_7Rva005ED0D0@@6BV3Slot1@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x18) = (unsigned int)__identifier("??_7Rva005ED0D0@@6BV3Slot2W@@@");
+        *(volatile unsigned int *)((unsigned char *)this + 0x20) = (unsigned int)__identifier("??_7Rva005ED0D0@@6BV3Slot3@@@");
     }
 
 private:
@@ -1710,79 +1679,10 @@ extern const char SPHERICAL_EMISSION_VELOCITY_MODULE_TEMPLATE_PARSE_TABLE[];
 extern const char STREAK_DRAW_MODULE_TEMPLATE_PARSE_TABLE[];
 extern const char TERRAIN_COLLISION_MODULE_TEMPLATE_PARSE_TABLE[];
 extern const void *CATEGORY_MODULE_CLASS_0_VTABLE;
-extern const char g_01113A7C[];
-extern const char g_01113A70[];
-extern const char g_0108EE10[];
-extern const char g_01113C94[];
-extern const char g_0109F2A4[];
-extern const char g_010FA90C[];
-extern const char g_0109C33C[];
-extern const char g_01114440[];
-extern const char g_01114434[];
-extern const char g_01114424[];
-extern const char g_01114410[];
-extern const char g_011136D8[];
-extern const char g_011136CC[];
-extern const char g_011136C0[];
-extern const char g_011136B0[];
-extern const char g_011136A0[];
-extern const char g_01113E20[];
-extern const char g_01113E14[];
-extern const char g_010F1A0C[];
-extern const char g_011142EC[];
-extern const char g_011142E4[];
-extern const char g_010F19FC[];
-extern const char g_011142D4[];
-extern const char g_011142CC[];
-extern const char g_011142BC[];
-extern const char g_011142AC[];
-extern const char g_011142A4[];
-extern const char g_010A141C[];
-extern const char g_010AF400[];
-extern const char g_0109D84C[];
-extern const char g_01113FD4[];
-extern const char g_01113894[];
-extern const char g_01113884[];
-extern const char g_01113874[];
-extern const char g_01113868[];
-extern const char g_0111385C[];
-extern const char g_0111384C[];
-extern const char g_0111383C[];
-extern const char g_01113830[];
-extern const char g_01113824[];
-extern const char g_01113814[];
-extern const char g_01113804[];
-extern const char g_011137F8[];
-extern const char g_011137EC[];
-extern const char g_011137D0[];
-extern const char g_010A6938[];
-extern const char g_01114A90[];
-extern const char g_01114A80[];
-extern const char g_01114A70[];
-extern const char g_01114A64[];
-extern const char g_01114A58[];
-extern const char g_01114A4C[];
-extern const char g_01114A3C[];
-extern const char g_01114A2C[];
-extern const char g_01114A1C[];
-extern const char g_01114930[];
-extern const char g_01114920[];
-extern const char g_0111490C[];
-extern const char g_01114900[];
-extern const char g_01114504[];
-extern const char g_011144EC[];
 extern void *g_01110208;
 extern void *g_01110180;
 extern void *g_011101B0;
 extern void *g_01110258;
-extern const char g_01110838[];
-extern const char g_0111085C[];
-extern const char g_01110850[];
-extern const char g_01110820[];
-extern const char g_01110868[];
-extern const char g_01110880[];
-extern const char g_0111088C[];
-extern const char g_01110874[];
 extern void **defaultModuleTag0SourceAt8;
 extern void **defaultModuleTag0SourceAt4;
 extern void **defaultModuleTag1SourceAt8;
@@ -1898,7 +1798,7 @@ ConcreteModuleClass<DefaultModuleTag<1> >::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(defaultModuleTag1SourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<1>::s_defaultModule) = this;
-    self[0] = ( void *)g_01110838;
+    self[0] = ( void *)categoryModuleClass1Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<1>::s_firstList);
@@ -1909,7 +1809,7 @@ ConcreteModuleClass<DefaultModuleTag<1> >::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<DefaultModuleTag<1> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110838;
+    *(const void **)this = (const void *)categoryModuleClass1Vftable;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$00@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$00@FXParticleSystem@@@2@XZ
@@ -1930,7 +1830,7 @@ ConcreteModuleClass<DefaultModuleTag<2> >::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(defaultModuleTag2SourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<2>::s_defaultModule) = this;
-    self[0] = ( void *)g_0111085C;
+    self[0] = ( void *)categoryModuleClass2Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<2>::s_firstList);
@@ -1941,7 +1841,7 @@ ConcreteModuleClass<DefaultModuleTag<2> >::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<DefaultModuleTag<2> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111085C;
+    *(const void **)this = (const void *)categoryModuleClass2Vftable;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$01@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$01@FXParticleSystem@@@2@XZ
@@ -1962,7 +1862,7 @@ ConcreteModuleClass<DefaultModuleTag<3> >::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(defaultModuleTag3SourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<3>::s_defaultModule) = this;
-    self[0] = ( void *)g_01110850;
+    self[0] = ( void *)categoryModuleClass3Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<3>::s_firstList);
@@ -1973,7 +1873,7 @@ ConcreteModuleClass<DefaultModuleTag<3> >::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<DefaultModuleTag<3> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110850;
+    *(const void **)this = (const void *)categoryModuleClass3Vftable;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$02@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$02@FXParticleSystem@@@2@XZ
@@ -1994,7 +1894,7 @@ ConcreteModuleClass<DefaultModuleTag<6> >::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(defaultModuleTag6SourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_defaultModule) = this;
-    self[0] = ( void *)g_01110820;
+    self[0] = ( void *)categoryModuleClass6Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2005,7 +1905,7 @@ ConcreteModuleClass<DefaultModuleTag<6> >::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<DefaultModuleTag<6> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$05@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$05@FXParticleSystem@@@2@XZ
@@ -2026,7 +1926,7 @@ ConcreteModuleClass<DefaultModuleTag<7> >::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(defaultModuleTag7SourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<7>::s_defaultModule) = this;
-    self[0] = ( void *)g_01110868;
+    self[0] = ( void *)categoryModuleClass7Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<7>::s_firstList);
@@ -2037,7 +1937,7 @@ ConcreteModuleClass<DefaultModuleTag<7> >::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<DefaultModuleTag<7> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110868;
+    *(const void **)this = (const void *)categoryModuleClass7Vftable;
 }
 
 // ?getClass@?$ConcreteModuleTemplate@V?$DefaultModuleTag@$06@FXParticleSystem@@@FXParticleSystem@@UBEABV?$ConcreteModuleClass@V?$DefaultModuleTag@$06@FXParticleSystem@@@2@XZ
@@ -2057,7 +1957,7 @@ ConcreteModuleClass<ModuleTag<2, RENDEROBJECT_UPDATE_MODULE_KEY, RENDEROBJECT_UP
     const void *first = *reinterpret_cast<void **>(renderObjectUpdateSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(renderObjectUpdateSourceAt8);
-    slots[0] = ( void *)g_0111085C;
+    slots[0] = ( void *)categoryModuleClass2Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<2>::s_firstList);
@@ -2068,7 +1968,7 @@ ConcreteModuleClass<ModuleTag<2, RENDEROBJECT_UPDATE_MODULE_KEY, RENDEROBJECT_UP
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$01$E?RENDEROBJECT_UPDATE_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_UPDATE_MODULE_NAME@2@3QBDBVRenderObjectUpdateModule@2@VRenderObjectUpdateModuleTemplate@2@VRenderObjectParticleUpdateModule@2@VRenderObjectParticleUpdateModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<2, RENDEROBJECT_UPDATE_MODULE_KEY, RENDEROBJECT_UPDATE_MODULE_NAME, RenderObjectUpdateModule, RenderObjectUpdateModuleTemplate, RenderObjectParticleUpdateModule, RenderObjectParticleUpdateModuleTemplate> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111085C;
+    *(const void **)this = (const void *)categoryModuleClass2Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$01$E?RENDEROBJECT_UPDATE_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_UPDATE_MODULE_NAME@2@3QBDBVRenderObjectUpdateModule@2@VRenderObjectUpdateModuleTemplate@2@VRenderObjectParticleUpdateModule@2@VRenderObjectParticleUpdateModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVRenderObjectUpdateModuleTemplate@2@PAVINI@@@Z
@@ -2102,7 +2002,7 @@ ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY, CYLIN
     const void *first = *reinterpret_cast<void **>(cylindricalEmissionVelocitySourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(cylindricalEmissionVelocitySourceAt8);
-    slots[0] = ( void *)g_01110880;
+    slots[0] = ( void *)categoryModuleClass4Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_firstList);
@@ -2113,7 +2013,7 @@ ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY, CYLIN
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<4, CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY, CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME, CylindricalEmissionVelocityModule, CylindricalEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110880;
+    *(const void **)this = (const void *)categoryModuleClass4Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$03$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDRICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVCylindricalEmissionVelocityModule@2@VCylindricalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVCylindricalEmissionVelocityModuleTemplate@2@PAVINI@@@Z
@@ -2148,7 +2048,7 @@ ConcreteModuleClass<ModuleTag<4, HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY, HEM
     const void *first = *reinterpret_cast<void **>(hemisphericalEmissionVelocitySourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(hemisphericalEmissionVelocitySourceAt8);
-    slots[0] = ( void *)g_01110880;
+    slots[0] = ( void *)categoryModuleClass4Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_firstList);
@@ -2159,7 +2059,7 @@ ConcreteModuleClass<ModuleTag<4, HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY, HEM
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$03$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVHemisphericalEmissionVelocityModule@2@VHemisphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<4, HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY, HEMISPHERICAL_EMISSION_VELOCITY_MODULE_NAME, HemisphericalEmissionVelocityModule, HemisphericalEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110880;
+    *(const void **)this = (const void *)categoryModuleClass4Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$03$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?HEMISPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVHemisphericalEmissionVelocityModule@2@VHemisphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVHemisphericalEmissionVelocityModuleTemplate@2@PAVINI@@@Z
@@ -2194,7 +2094,7 @@ ConcreteModuleClass<ModuleTag<4, OUTWARD_EMISSION_VELOCITY_MODULE_KEY, OUTWARD_E
     const void *first = *reinterpret_cast<void **>(outwardEmissionVelocitySourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(outwardEmissionVelocitySourceAt8);
-    slots[0] = ( void *)g_01110880;
+    slots[0] = ( void *)categoryModuleClass4Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_firstList);
@@ -2205,7 +2105,7 @@ ConcreteModuleClass<ModuleTag<4, OUTWARD_EMISSION_VELOCITY_MODULE_KEY, OUTWARD_E
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$03$E?OUTWARD_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?OUTWARD_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVOutwardEmissionVelocityModule@2@VOutwardEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<4, OUTWARD_EMISSION_VELOCITY_MODULE_KEY, OUTWARD_EMISSION_VELOCITY_MODULE_NAME, OutwardEmissionVelocityModule, OutwardEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110880;
+    *(const void **)this = (const void *)categoryModuleClass4Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$03$E?OUTWARD_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?OUTWARD_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVOutwardEmissionVelocityModule@2@VOutwardEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVOutwardEmissionVelocityModuleTemplate@2@PAVINI@@@Z
@@ -2240,7 +2140,7 @@ ConcreteModuleClass<ModuleTag<4, SPHERICAL_EMISSION_VELOCITY_MODULE_KEY, SPHERIC
     const void *first = *reinterpret_cast<void **>(sphericalEmissionVelocitySourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(sphericalEmissionVelocitySourceAt8);
-    slots[0] = ( void *)g_01110880;
+    slots[0] = ( void *)categoryModuleClass4Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_firstList);
@@ -2251,7 +2151,7 @@ ConcreteModuleClass<ModuleTag<4, SPHERICAL_EMISSION_VELOCITY_MODULE_KEY, SPHERIC
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$03$E?SPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVSphericalEmissionVelocityModule@2@VSphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<4, SPHERICAL_EMISSION_VELOCITY_MODULE_KEY, SPHERICAL_EMISSION_VELOCITY_MODULE_NAME, SphericalEmissionVelocityModule, SphericalEmissionVelocityModuleTemplate, DefaultParticleModule<4>, DefaultParticleModuleTemplate<4> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110880;
+    *(const void **)this = (const void *)categoryModuleClass4Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$03$E?SPHERICAL_EMISSION_VELOCITY_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERICAL_EMISSION_VELOCITY_MODULE_NAME@2@3QBDBVSphericalEmissionVelocityModule@2@VSphericalEmissionVelocityModuleTemplate@2@V?$DefaultParticleModule@$03@2@V?$DefaultParticleModuleTemplate@$03@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVSphericalEmissionVelocityModuleTemplate@2@PAVINI@@@Z
@@ -2286,7 +2186,7 @@ ConcreteModuleClass<ModuleTag<5, BOX_EMISSION_VOLUME_MODULE_KEY, BOX_EMISSION_VO
     const void *first = *reinterpret_cast<void **>(boxEmissionVolumeSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(boxEmissionVolumeSourceAt8);
-    slots[0] = ( void *)g_0111088C;
+    slots[0] = ( void *)categoryModuleClass5Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2297,7 +2197,7 @@ ConcreteModuleClass<ModuleTag<5, BOX_EMISSION_VOLUME_MODULE_KEY, BOX_EMISSION_VO
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$04$E?BOX_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?BOX_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVBoxEmissionVolumeModule@2@VBoxEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<5, BOX_EMISSION_VOLUME_MODULE_KEY, BOX_EMISSION_VOLUME_MODULE_NAME, BoxEmissionVolumeModule, BoxEmissionVolumeModuleTemplate, DefaultParticleModule<5>, DefaultParticleModuleTemplate<5> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$04$E?BOX_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?BOX_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVBoxEmissionVolumeModule@2@VBoxEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVBoxEmissionVolumeModuleTemplate@2@PAVINI@@@Z
@@ -2345,7 +2245,7 @@ ConcreteModuleClass<ModuleTag<5, CYLINDER_EMISSION_VOLUME_MODULE_KEY, CYLINDER_E
     const void *first = *reinterpret_cast<void **>(cylinderEmissionVolumeSourceAt4);
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(cylinderEmissionVolumeSourceAt8);
-    self[0] = ( void *)g_0111088C;
+    self[0] = ( void *)categoryModuleClass5Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2356,7 +2256,7 @@ ConcreteModuleClass<ModuleTag<5, CYLINDER_EMISSION_VOLUME_MODULE_KEY, CYLINDER_E
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$04$E?CYLINDER_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDER_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVCylinderEmissionVolumeModule@2@VCylinderEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<5, CYLINDER_EMISSION_VOLUME_MODULE_KEY, CYLINDER_EMISSION_VOLUME_MODULE_NAME, CylinderEmissionVolumeModule, CylinderEmissionVolumeModuleTemplate, DefaultParticleModule<5>, DefaultParticleModuleTemplate<5> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$04$E?CYLINDER_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?CYLINDER_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVCylinderEmissionVolumeModule@2@VCylinderEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVCylinderEmissionVolumeModuleTemplate@2@PAVINI@@@Z
@@ -2406,7 +2306,7 @@ ConcreteModuleClass<ModuleTag<5, LIGHTNING_EMISSION_MODULE_KEY, LIGHTNING_EMISSI
     const void *first = *reinterpret_cast<void **>(lightningEmissionSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(lightningEmissionSourceAt8);
-    slots[0] = ( void *)g_0111088C;
+    slots[0] = ( void *)categoryModuleClass5Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2417,7 +2317,7 @@ ConcreteModuleClass<ModuleTag<5, LIGHTNING_EMISSION_MODULE_KEY, LIGHTNING_EMISSI
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$04$E?LIGHTNING_EMISSION_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_EMISSION_MODULE_NAME@2@3QBDBVLightningEmissionModule@2@VLightningEmissionModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<5, LIGHTNING_EMISSION_MODULE_KEY, LIGHTNING_EMISSION_MODULE_NAME, LightningEmissionModule, LightningEmissionModuleTemplate, DefaultParticleModule<5>, DefaultParticleModuleTemplate<5> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$04$E?LIGHTNING_EMISSION_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_EMISSION_MODULE_NAME@2@3QBDBVLightningEmissionModule@2@VLightningEmissionModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVLightningEmissionModuleTemplate@2@PAVINI@@@Z
@@ -2450,7 +2350,7 @@ ConcreteModuleClass<ModuleTag<5, LINE_EMISSION_VOLUME_MODULE_KEY, LINE_EMISSION_
     const void *first = *reinterpret_cast<void **>(lineEmissionVolumeSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(lineEmissionVolumeSourceAt8);
-    slots[0] = ( void *)g_0111088C;
+    slots[0] = ( void *)categoryModuleClass5Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2461,7 +2361,7 @@ ConcreteModuleClass<ModuleTag<5, LINE_EMISSION_VOLUME_MODULE_KEY, LINE_EMISSION_
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$04$E?LINE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?LINE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVLineEmissionVolumeModule@2@VLineEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<5, LINE_EMISSION_VOLUME_MODULE_KEY, LINE_EMISSION_VOLUME_MODULE_NAME, LineEmissionVolumeModule, LineEmissionVolumeModuleTemplate, DefaultParticleModule<5>, DefaultParticleModuleTemplate<5> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$04$E?LINE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?LINE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVLineEmissionVolumeModule@2@VLineEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVLineEmissionVolumeModuleTemplate@2@PAVINI@@@Z
@@ -2512,7 +2412,7 @@ ConcreteModuleClass<ModuleTag<5, SPHERE_EMISSION_VOLUME_MODULE_KEY, SPHERE_EMISS
     const void *first = *reinterpret_cast<void **>(sphereEmissionVolumeSourceAt4);
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(sphereEmissionVolumeSourceAt8);
-    self[0] = ( void *)g_0111088C;
+    self[0] = ( void *)categoryModuleClass5Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2523,7 +2423,7 @@ ConcreteModuleClass<ModuleTag<5, SPHERE_EMISSION_VOLUME_MODULE_KEY, SPHERE_EMISS
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$04$E?SPHERE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVSphereEmissionVolumeModule@2@VSphereEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<5, SPHERE_EMISSION_VOLUME_MODULE_KEY, SPHERE_EMISSION_VOLUME_MODULE_NAME, SphereEmissionVolumeModule, SphereEmissionVolumeModuleTemplate, DefaultParticleModule<5>, DefaultParticleModuleTemplate<5> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$04$E?SPHERE_EMISSION_VOLUME_MODULE_KEY@FXParticleSystem@@3QBDB$E?SPHERE_EMISSION_VOLUME_MODULE_NAME@2@3QBDBVSphereEmissionVolumeModule@2@VSphereEmissionVolumeModuleTemplate@2@V?$DefaultParticleModule@$04@2@V?$DefaultParticleModuleTemplate@$04@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVSphereEmissionVolumeModuleTemplate@2@PAVINI@@@Z
@@ -2569,7 +2469,7 @@ ConcreteModuleClass<ModuleTag<6, BUTTERFLY_DRAW_MODULE_KEY, BUTTERFLY_DRAW_MODUL
     const void *first = *reinterpret_cast<void **>(butterflyDrawSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(butterflyDrawSourceAt8);
-    slots[0] = ( void *)g_01110820;
+    slots[0] = ( void *)categoryModuleClass6Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2580,7 +2480,7 @@ ConcreteModuleClass<ModuleTag<6, BUTTERFLY_DRAW_MODULE_KEY, BUTTERFLY_DRAW_MODUL
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?BUTTERFLY_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?BUTTERFLY_DRAW_MODULE_NAME@2@3QBDBVButterflyDrawModule@2@VButterflyDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<6, BUTTERFLY_DRAW_MODULE_KEY, BUTTERFLY_DRAW_MODULE_NAME, ButterflyDrawModule, ButterflyDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?BUTTERFLY_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?BUTTERFLY_DRAW_MODULE_NAME@2@3QBDBVButterflyDrawModule@2@VButterflyDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVButterflyDrawModuleTemplate@2@PAVINI@@@Z
@@ -2614,7 +2514,7 @@ ConcreteModuleClass<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODUL
     const void *first = *reinterpret_cast<void **>(lightningDrawSourceAt4);
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(lightningDrawSourceAt8);
-    self[0] = ( void *)g_01110820;
+    self[0] = ( void *)categoryModuleClass6Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2625,7 +2525,7 @@ ConcreteModuleClass<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODUL
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?LIGHTNING_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_DRAW_MODULE_NAME@2@3QBDBVLightningDrawModule@2@VLightningDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODULE_NAME, LightningDrawModule, LightningDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?LIGHTNING_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_DRAW_MODULE_NAME@2@3QBDBVLightningDrawModule@2@VLightningDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVLightningDrawModuleTemplate@2@PAVINI@@@Z
@@ -2659,7 +2559,7 @@ ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, Qu
     const void *first = *reinterpret_cast<void **>(quadDrawSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(quadDrawSourceAt8);
-    slots[0] = ( void *)g_01110820;
+    slots[0] = ( void *)categoryModuleClass6Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2670,7 +2570,7 @@ ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, Qu
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<6, QUAD_DRAW_MODULE_KEY, QUAD_DRAW_MODULE_NAME, QuadDrawModule, QuadDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?QUAD_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?QUAD_DRAW_MODULE_NAME@2@3QBDBVQuadDrawModule@2@VQuadDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVQuadDrawModuleTemplate@2@PAVINI@@@Z
@@ -2705,7 +2605,7 @@ ConcreteModuleClass<ModuleTag<6, RENDEROBJECT_DRAW_MODULE_KEY, RENDEROBJECT_DRAW
     const void *first = *reinterpret_cast<void **>(renderObjectDrawSourceAt4);
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(renderObjectDrawSourceAt8);
-    self[0] = ( void *)g_01110820;
+    self[0] = ( void *)categoryModuleClass6Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2716,7 +2616,7 @@ ConcreteModuleClass<ModuleTag<6, RENDEROBJECT_DRAW_MODULE_KEY, RENDEROBJECT_DRAW
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?RENDEROBJECT_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_DRAW_MODULE_NAME@2@3QBDBVRenderObjectDrawModule@2@VRenderObjectDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<6, RENDEROBJECT_DRAW_MODULE_KEY, RENDEROBJECT_DRAW_MODULE_NAME, RenderObjectDrawModule, RenderObjectDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?RENDEROBJECT_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?RENDEROBJECT_DRAW_MODULE_NAME@2@3QBDBVRenderObjectDrawModule@2@VRenderObjectDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVRenderObjectDrawModuleTemplate@2@PAVINI@@@Z
@@ -2751,7 +2651,7 @@ ConcreteModuleClass<ModuleTag<6, STREAK_DRAW_MODULE_KEY, STREAK_DRAW_MODULE_NAME
     const void *first = *reinterpret_cast<void **>(streakDrawSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(streakDrawSourceAt8);
-    slots[0] = ( void *)g_01110820;
+    slots[0] = ( void *)categoryModuleClass6Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<6>::s_firstList);
@@ -2762,7 +2662,7 @@ ConcreteModuleClass<ModuleTag<6, STREAK_DRAW_MODULE_KEY, STREAK_DRAW_MODULE_NAME
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$05$E?STREAK_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?STREAK_DRAW_MODULE_NAME@2@3QBDBVStreakDrawModule@2@VStreakDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<6, STREAK_DRAW_MODULE_KEY, STREAK_DRAW_MODULE_NAME, StreakDrawModule, StreakDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110820;
+    *(const void **)this = (const void *)categoryModuleClass6Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$05$E?STREAK_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?STREAK_DRAW_MODULE_NAME@2@3QBDBVStreakDrawModule@2@VStreakDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVStreakDrawModuleTemplate@2@PAVINI@@@Z
@@ -2797,7 +2697,7 @@ ConcreteModuleClass<ModuleTag<8, LIFE_EVENT_MODULE_KEY, LIFE_EVENT_MODULE_NAME, 
     const void *first = *reinterpret_cast<void **>(lifeEventSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(lifeEventSourceAt8);
-    slots[0] = ( void *)g_01110874;
+    slots[0] = ( void *)categoryModuleClass8Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<8>::s_firstList);
@@ -2808,7 +2708,7 @@ ConcreteModuleClass<ModuleTag<8, LIFE_EVENT_MODULE_KEY, LIFE_EVENT_MODULE_NAME, 
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<8, LIFE_EVENT_MODULE_KEY, LIFE_EVENT_MODULE_NAME, LifeEventModule, LifeEventModuleTemplate, ParticleLifeEventModule, ParticleLifeEventModuleTemplate> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110874;
+    *(const void **)this = (const void *)categoryModuleClass8Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$07$E?LIFE_EVENT_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIFE_EVENT_MODULE_NAME@2@3QBDBVLifeEventModule@2@VLifeEventModuleTemplate@2@VParticleLifeEventModule@2@VParticleLifeEventModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVLifeEventModuleTemplate@2@PAVINI@@@Z
@@ -2841,7 +2741,7 @@ ConcreteModuleClass<ModuleTag<8, TERRAIN_COLLISION_MODULE_KEY, TERRAIN_COLLISION
     const void *first = *reinterpret_cast<void **>(terrainCollisionSourceAt4);
     void **slots = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(terrainCollisionSourceAt8);
-    slots[0] = ( void *)g_01110874;
+    slots[0] = ( void *)categoryModuleClass8Vftable;
     slots[1] = (void *)second;
     slots[2] = (void *)first;
     slots[3] = *reinterpret_cast<void **>(&CategoryModuleClass<8>::s_firstList);
@@ -2852,7 +2752,7 @@ ConcreteModuleClass<ModuleTag<8, TERRAIN_COLLISION_MODULE_KEY, TERRAIN_COLLISION
 // ??1?$ConcreteModuleClass@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<ModuleTag<8, TERRAIN_COLLISION_MODULE_KEY, TERRAIN_COLLISION_MODULE_NAME, TerrainCollisionModule, TerrainCollisionModuleTemplate, ParticleTerrainCollisionModule, ParticleTerrainCollisionModuleTemplate> >::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110874;
+    *(const void **)this = (const void *)categoryModuleClass8Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@V?$ModuleTag@$07$E?TERRAIN_COLLISION_MODULE_KEY@FXParticleSystem@@3QBDB$E?TERRAIN_COLLISION_MODULE_NAME@2@3QBDBVTerrainCollisionModule@2@VTerrainCollisionModuleTemplate@2@VParticleTerrainCollisionModule@2@VParticleTerrainCollisionModuleTemplate@2@@FXParticleSystem@@@FXParticleSystem@@UBEPAVTerrainCollisionModuleTemplate@2@PAVINI@@@Z
@@ -2886,7 +2786,7 @@ ConcreteModuleClass<OrthoEmissionVelocityModuleTag>::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(orthoEmissionVelocitySourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_defaultModule) = this;
-    self[0] = ( void *)g_01110880;
+    self[0] = ( void *)categoryModuleClass4Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<4>::s_firstList);
@@ -2897,7 +2797,7 @@ ConcreteModuleClass<OrthoEmissionVelocityModuleTag>::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<OrthoEmissionVelocityModuleTag>::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_01110880;
+    *(const void **)this = (const void *)categoryModuleClass4Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@UOrthoEmissionVelocityModuleTag@FXParticleSystem@@@FXParticleSystem@@UBEPAVOrthoEmissionVelocityModuleTemplate@2@PAVINI@@@Z
@@ -2933,7 +2833,7 @@ ConcreteModuleClass<PointEmissionVolumeModuleTag>::ConcreteModuleClass()
     void **self = reinterpret_cast<void **>(this);
     const void *second = *reinterpret_cast<void **>(pointEmissionVolumeSourceAt4);
     *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_defaultModule) = this;
-    self[0] = ( void *)g_0111088C;
+    self[0] = ( void *)categoryModuleClass5Vftable;
     self[1] = (void *)second;
     self[2] = (void *)first;
     self[3] = *reinterpret_cast<void **>(&CategoryModuleClass<5>::s_firstList);
@@ -2944,7 +2844,7 @@ ConcreteModuleClass<PointEmissionVolumeModuleTag>::ConcreteModuleClass()
 // ??1?$ConcreteModuleClass@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleClass<PointEmissionVolumeModuleTag>::~ConcreteModuleClass()
 {
-    *(const void **)this = (const void *)g_0111088C;
+    *(const void **)this = (const void *)categoryModuleClass5Vftable;
 }
 
 // ?createTemplate@?$ConcreteModuleClass@UPointEmissionVolumeModuleTag@FXParticleSystem@@@FXParticleSystem@@UBEPAVPointEmissionVolumeModuleTemplate@2@PAVINI@@@Z
@@ -3889,18 +3789,18 @@ ButterflyDrawModule *ConcreteModuleTemplate<ModuleTag<6, BUTTERFLY_DRAW_MODULE_K
 ConcreteModuleTemplate<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODULE_NAME, LightningDrawModule, LightningDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::ConcreteModuleTemplate(const ConcreteModuleTemplate<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODULE_NAME, LightningDrawModule, LightningDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > > &that)
 {
     ((LightningDrawTemplateCopyCtorShim *)this)->construct(&that);
-    *(volatile unsigned int *)this = (unsigned int)g_vtbl_01110EBC;
-    *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)g_vtbl_01110EB8;
-    *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)g_vtbl_01110EA4;
+    *(volatile unsigned int *)this = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6BModuleTemplate@1@@");
+    *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B?$CategoryModuleInfo@$05@1@@");
+    *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B@");
 }
 
 // ??0?$ConcreteModuleTemplate@V?$ModuleTag@$05$E?LIGHTNING_DRAW_MODULE_KEY@FXParticleSystem@@3QBDB$E?LIGHTNING_DRAW_MODULE_NAME@2@3QBDBVLightningDrawModule@2@VLightningDrawModuleTemplate@2@V?$DefaultParticleModule@$05@2@V?$DefaultParticleModuleTemplate@$05@2@@FXParticleSystem@@@FXParticleSystem@@QAE@XZ
 ConcreteModuleTemplate<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODULE_NAME, LightningDrawModule, LightningDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::ConcreteModuleTemplate()
 {
     ((LightningDrawTemplateCtorShim *)this)->construct();
-    *(volatile unsigned int *)this = (unsigned int)g_vtbl_01110EBC;
-    *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)g_vtbl_01110EB8;
-    *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)g_vtbl_01110EA4;
+    *(volatile unsigned int *)this = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6BModuleTemplate@1@@");
+    *(volatile unsigned int *)((unsigned char *)this + 4) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B?$CategoryModuleInfo@$05@1@@");
+    *(volatile unsigned int *)((unsigned char *)this + 8) = (unsigned int)__identifier("??_7?$DefaultParticleModuleTemplate@$05@FXParticleSystem@@6B@");
 }
 
 ConcreteModuleTemplate<ModuleTag<6, LIGHTNING_DRAW_MODULE_KEY, LIGHTNING_DRAW_MODULE_NAME, LightningDrawModule, LightningDrawModuleTemplate, DefaultParticleModule<6>, DefaultParticleModuleTemplate<6> > >::~ConcreteModuleTemplate()
@@ -8808,14 +8708,14 @@ void ParticleSystemTemplate::parse(INI *ini, void *data, void *store, const void
     // reached through its retail ILT at 0x00436615 -> 0x004B8F60;
     // the other parser routes are their named INI bodies.
     Field fields[] = {
-        { "Priority", reinterpret_cast<ParseProc>(bfmeINIParseIndexList), (const void *)&g_01110208, 0x7c },
+        { "Priority", reinterpret_cast<ParseProc>(__identifier("?parseIndexList@INI@@SAXPAV1@PAX1PBX@Z")), (const void *)&g_01110208, 0x7c },
         { "IsOneShot", reinterpret_cast<ParseProc>(bfmeINIParseBool), 0, 0x04 },
-        { "Shader", reinterpret_cast<ParseProc>(bfmeINIParseIndexList), (const void *)&g_01110180, 0x08 },
-        { "Type", reinterpret_cast<ParseProc>(bfmeINIParseIndexList), (const void *)&g_011101B0, 0x0c },
-        { "ParticleName", reinterpret_cast<ParseProc>(bfmeINIParseAsciiString), 0, 0x10 },
-        { "SlaveSystem", reinterpret_cast<ParseProc>(bfmeINIParseAsciiString), 0, 0x68 },
+        { "Shader", reinterpret_cast<ParseProc>(__identifier("?parseIndexList@INI@@SAXPAV1@PAX1PBX@Z")), (const void *)&g_01110180, 0x08 },
+        { "Type", reinterpret_cast<ParseProc>(__identifier("?parseIndexList@INI@@SAXPAV1@PAX1PBX@Z")), (const void *)&g_011101B0, 0x0c },
+        { "ParticleName", reinterpret_cast<ParseProc>(__identifier("?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z")), 0, 0x10 },
+        { "SlaveSystem", reinterpret_cast<ParseProc>(__identifier("?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z")), 0, 0x68 },
         { "SlavePosOffset", reinterpret_cast<ParseProc>(bfmeINIParseCoord3D), 0, 0x6c },
-        { "PerParticleAttachedSystem", reinterpret_cast<ParseProc>(bfmeINIParseAsciiString), 0, 0x78 },
+        { "PerParticleAttachedSystem", reinterpret_cast<ParseProc>(__identifier("?parseAsciiString@INI@@SAXPAV1@PAX1PBX@Z")), 0, 0x78 },
         { "Lifetime", reinterpret_cast<ParseProc>(j_00036615), 0, 0x14 },
         { "SystemLifetime", reinterpret_cast<ParseProc>(bfmeINIParseUnsignedInt), 0, 0x20 },
         { "SortLevel", reinterpret_cast<ParseProc>(bfmeINIParseUnsignedInt), 0, 0x24 },
@@ -8924,12 +8824,12 @@ void BoxEmissionVolumeModuleTemplate::writeINI(File &file, unsigned int flags) c
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *isHollowSetting = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (isHollowSetting->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113A7C, isHollowSetting);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"IsHollow", isHollowSetting);
 
     float *halfSize = (float *)((unsigned char *)this + 0x10);
     if (halfSize[0] != g_rva01075350 || halfSize[1] != g_rva01075350 ||
         halfSize[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_01113A70, halfSize);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"HalfSize", halfSize);
 
     {
         writeStreamText(file,
@@ -8957,20 +8857,20 @@ void CylinderEmissionVolumeModuleTemplate::writeINI(File &file, unsigned int fla
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *isHollowSetting = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (isHollowSetting->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113A7C, isHollowSetting);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"IsHollow", isHollowSetting);
 
     float *radius = (float *)((unsigned char *)this + 0x10);
     if (*radius != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_0108EE10, radius);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Radius", radius);
 
     float *length = (float *)((unsigned char *)this + 0x14);
     if (*length != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_01113C94, length);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Length", length);
 
     float *offset = (float *)((unsigned char *)this + 0x18);
     if (*offset != g_rva01075350 || offset[1] != g_rva01075350 ||
         offset[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_0109F2A4, offset);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"Offset", offset);
 
     {
         writeStreamText(file,
@@ -8992,11 +8892,11 @@ void CylindricalEmissionVelocityModuleTemplate::writeINI(File &file, unsigned in
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1Pair *radial = (U1Pair *)((unsigned char *)this + 0x0c);
     if (radial->m_x != g_rva01075350 || radial->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_010FA90C, radial);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Radial", radial);
 
     U1Pair *normal = (U1Pair *)((unsigned char *)this + 0x18);
     if (normal->m_x != g_rva01075350 || normal->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_0109C33C, normal);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Normal", normal);
 
     {
         writeStreamText(file,
@@ -9015,13 +8915,13 @@ void LifeEventModuleTemplate::writeINI(File &file, unsigned int flags) const
     reinterpret_cast<BaseWriteFunction>(::Rva005FCB60WriteBase)(this, &file, &flags);
 
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
-    u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114440,
+    u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"EventTime",
         (U1Pair *)((unsigned char *)this + 0x14));
-    u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)g_01114434,
+    u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)"EventFX",
         (U1CountedHolder *)((unsigned char *)this + 0x10));
-    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01114424,
+    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"PerParticle",
         (U1ByteFlagged *)((unsigned char *)this + 0x08));
-    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01114410,
+    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"KillAfterEvent",
         (U1ByteFlagged *)((unsigned char *)this + 0x09));
 
     {
@@ -9042,23 +8942,23 @@ void LightningDrawModuleTemplate::writeINI(File &file, unsigned int flags) const
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1Pair *offsetX = (U1Pair *)((unsigned char *)this + 0x0c);
     if (offsetX->m_x != g_rva01075350 || offsetX->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011136D8, offsetX);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"OffsetX", offsetX);
 
     U1Pair *offsetY = (U1Pair *)((unsigned char *)this + 0x18);
     if (offsetY->m_x != g_rva01075350 || offsetY->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011136CC, offsetY);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"OffsetY", offsetY);
 
     U1Pair *offsetZ = (U1Pair *)((unsigned char *)this + 0x24);
     if (offsetZ->m_x != g_rva01075350 || offsetZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011136C0, offsetZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"OffsetZ", offsetZ);
 
     float *multiChance = (float *)((unsigned char *)this + 0x30);
     if (*multiChance != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_011136B0, multiChance);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"MultiChance", multiChance);
 
     U1ByteFlagged *tileTexture = (U1ByteFlagged *)((unsigned char *)this + 0x34);
     if (tileTexture->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_011136A0, tileTexture);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"TileTexture", tileTexture);
 
     {
         writeStreamText(file,
@@ -9080,48 +8980,48 @@ void LightningEmissionModuleTemplate::writeINI(File &file, unsigned int flags) c
     float *startPoint = (float *)((unsigned char *)this + 0x10);
     if (startPoint[0] != g_rva01075350 || startPoint[1] != g_rva01075350 ||
         startPoint[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_01113E20, startPoint);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"StartPoint", startPoint);
 
     float *endPoint = (float *)((unsigned char *)this + 0x1c);
     if (endPoint[0] != g_rva01075350 || endPoint[1] != g_rva01075350 ||
         endPoint[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_01113E14, endPoint);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"EndPoint", endPoint);
 
     U1Pair *amplitude1 = (U1Pair *)((unsigned char *)this + 0x28);
     if (amplitude1->m_x != g_rva01075350 || amplitude1->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_010F1A0C, amplitude1);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Amplitude1", amplitude1);
 
     U1Pair *frequency1 = (U1Pair *)((unsigned char *)this + 0x34);
     if (frequency1->m_x != g_rva01075350 || frequency1->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142EC, frequency1);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Frequency1", frequency1);
 
     U1Pair *phase1 = (U1Pair *)((unsigned char *)this + 0x40);
     if (phase1->m_x != g_rva01075350 || phase1->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142E4, phase1);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Phase1", phase1);
 
     U1Pair *amplitude2 = (U1Pair *)((unsigned char *)this + 0x4c);
     if (amplitude2->m_x != g_rva01075350 || amplitude2->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_010F19FC, amplitude2);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Amplitude2", amplitude2);
 
     U1Pair *frequency2 = (U1Pair *)((unsigned char *)this + 0x58);
     if (frequency2->m_x != g_rva01075350 || frequency2->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142D4, frequency2);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Frequency2", frequency2);
 
     U1Pair *phase2 = (U1Pair *)((unsigned char *)this + 0x64);
     if (phase2->m_x != g_rva01075350 || phase2->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142CC, phase2);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Phase2", phase2);
 
     U1Pair *amplitude3 = (U1Pair *)((unsigned char *)this + 0x70);
     if (amplitude3->m_x != g_rva01075350 || amplitude3->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142BC, amplitude3);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Amplitude3", amplitude3);
 
     U1Pair *frequency3 = (U1Pair *)((unsigned char *)this + 0x7c);
     if (frequency3->m_x != g_rva01075350 || frequency3->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142AC, frequency3);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Frequency3", frequency3);
 
     U1Pair *phase3 = (U1Pair *)((unsigned char *)this + 0x88);
     if (phase3->m_x != g_rva01075350 || phase3->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_011142A4, phase3);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Phase3", phase3);
 
     {
         writeStreamText(file,
@@ -9142,17 +9042,17 @@ void LineEmissionVolumeModuleTemplate::writeINI(File &file, unsigned int flags) 
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *isHollowSetting = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (isHollowSetting->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113A7C, isHollowSetting);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"IsHollow", isHollowSetting);
 
     float *startPoint = (float *)((unsigned char *)this + 0x10);
     if (startPoint[0] != g_rva01075350 || startPoint[1] != g_rva01075350 ||
         startPoint[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_01113E20, startPoint);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"StartPoint", startPoint);
 
     float *endPoint = (float *)((unsigned char *)this + 0x1c);
     if (endPoint[0] != g_rva01075350 || endPoint[1] != g_rva01075350 ||
         endPoint[2] != g_rva01075350)
-        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)g_01113E14, endPoint);
+        u4Next005F8AE0((INI *)&stream, (void *)flags, ( void *)"EndPoint", endPoint);
 
     {
         writeStreamText(file,
@@ -9177,11 +9077,11 @@ void OrthoEmissionVelocityModuleTemplate::writeINI(File &file, unsigned int flag
 
     U1Pair *yComponent = (U1Pair *)((unsigned char *)this + 0x18);
     if (yComponent->m_x != g_rva01075350 || yComponent->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_010A141C, yComponent);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Y", yComponent);
 
     U1Pair *zComponent = (U1Pair *)((unsigned char *)this + 0x24);
     if (zComponent->m_x != g_rva01075350 || zComponent->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_010AF400, zComponent);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Z", zComponent);
 
     {
         writeStreamText(file,
@@ -9202,11 +9102,11 @@ void OutwardEmissionVelocityModuleTemplate::writeINI(File &file, unsigned int fl
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1Pair *speed = (U1Pair *)((unsigned char *)this + 0x0c);
     if (speed->m_x != g_rva01075350 || speed->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_0109D84C, speed);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Speed", speed);
 
     U1Pair *otherSpeed = (U1Pair *)((unsigned char *)this + 0x18);
     if (otherSpeed->m_x != g_rva01075350 || otherSpeed->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01113FD4, otherSpeed);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"OtherSpeed", otherSpeed);
 
     {
         writeStreamText(file,
@@ -10802,7 +10702,7 @@ void PointEmissionVolumeModuleTemplate::writeINI(File &file, unsigned int flags)
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *isHollowSetting = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (isHollowSetting->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113A7C, isHollowSetting);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"IsHollow", isHollowSetting);
 
     {
         writeStreamText(file,
@@ -10829,69 +10729,69 @@ void RenderObjectDrawModuleTemplate::writeINI(File &file, unsigned int flags) co
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *multiRenderObjects = (U1ByteFlagged *)((unsigned char *)this + 0x14);
     if (multiRenderObjects->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113894, multiRenderObjects);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"MultiRenderObjects", multiRenderObjects);
 
     U1CountedHolder *renderGroup1 = (U1CountedHolder *)((unsigned char *)this + 0x18);
     U1Counted *item1 = renderGroup1->m_item;
     if (item1 != 0 && item1->m_count != 0)
-        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)g_01113884, renderGroup1);
+        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)"RenderGroup1", renderGroup1);
 
     unsigned int *numObjects1 = (unsigned int *)((unsigned char *)this + 0x1c);
     if (*numObjects1 != 0)
-        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)g_01113874, numObjects1);
+        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)"NumObjects1", numObjects1);
 
     float *percent1 = (float *)((unsigned char *)this + 0x20);
     if (*percent1 != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_01113868, percent1);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Percent1", percent1);
 
     unsigned int enum0 = *(unsigned int *)((unsigned char *)this + 0x24);
     if (enum0 != 8)
-        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)g_0111385C,
+        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)"Shader1",
             (void **)((unsigned char *)&g_01110180 + enum0 * 4));
 
     U1CountedHolder *renderGroup2 = (U1CountedHolder *)((unsigned char *)this + 0x28);
     U1Counted *item4 = renderGroup2->m_item;
     if (item4 != 0 && item4->m_count != 0)
-        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)g_0111384C, renderGroup2);
+        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)"RenderGroup2", renderGroup2);
 
     unsigned int *numObjects2 = (unsigned int *)((unsigned char *)this + 0x2c);
     if (*numObjects2 != 0)
-        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)g_0111383C, numObjects2);
+        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)"NumObjects2", numObjects2);
 
     float *percent2 = (float *)((unsigned char *)this + 0x30);
     if (*percent2 != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_01113830, percent2);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Percent2", percent2);
 
     unsigned int enum1 = *(unsigned int *)((unsigned char *)this + 0x34);
     if (enum1 != 8)
-        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)g_01113824,
+        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)"Shader2",
             (void **)((unsigned char *)&g_01110180 + enum1 * 4));
 
     U1CountedHolder *renderGroup3 = (U1CountedHolder *)((unsigned char *)this + 0x38);
     U1Counted *item7 = renderGroup3->m_item;
     if (item7 != 0 && item7->m_count != 0)
-        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)g_01113814, renderGroup3);
+        u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)"RenderGroup3", renderGroup3);
 
     unsigned int *numObjects3 = (unsigned int *)((unsigned char *)this + 0x3c);
     if (*numObjects3 != 0)
-        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)g_01113804, numObjects3);
+        u4Then005F7A30((INI *)&stream, (void *)flags, ( void *)"NumObjects3", numObjects3);
 
     float *percent3 = (float *)((unsigned char *)this + 0x40);
     if (*percent3 != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_011137F8, percent3);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Percent3", percent3);
 
     unsigned int enum2 = *(unsigned int *)((unsigned char *)this + 0x44);
     if (enum2 != 8)
-        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)g_011137EC,
+        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)"Shader3",
             (void **)((unsigned char *)&g_01110180 + enum2 * 4));
 
     U1ByteFlagged *sinkOnTerrainCollision = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (sinkOnTerrainCollision->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_011137D0, sinkOnTerrainCollision);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"SinkOnTerrainCollision", sinkOnTerrainCollision);
 
     float *sinkRate = (float *)((unsigned char *)this + 0x10);
     if (*sinkRate != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_010A6938, sinkRate);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"SinkRate", sinkRate);
 
     {
         writeStreamText(file,
@@ -10912,55 +10812,55 @@ void RenderObjectUpdateModuleTemplate::writeINI(File &file, unsigned int flags) 
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1Pair *startSizeX = (U1Pair *)((unsigned char *)this + 0x0c);
     if (startSizeX->m_x != g_rva01075350 || startSizeX->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A90, startSizeX);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"StartSizeX", startSizeX);
 
     U1Pair *startSizeY = (U1Pair *)((unsigned char *)this + 0x18);
     if (startSizeY->m_x != g_rva01075350 || startSizeY->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A80, startSizeY);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"StartSizeY", startSizeY);
 
     U1Pair *startSizeZ = (U1Pair *)((unsigned char *)this + 0x24);
     if (startSizeZ->m_x != g_rva01075350 || startSizeZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A70, startSizeZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"StartSizeZ", startSizeZ);
 
     U1Pair *sizeRateX = (U1Pair *)((unsigned char *)this + 0x30);
     if (sizeRateX->m_x != g_rva01075350 || sizeRateX->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A64, sizeRateX);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeRateX", sizeRateX);
 
     U1Pair *sizeRateY = (U1Pair *)((unsigned char *)this + 0x3c);
     if (sizeRateY->m_x != g_rva01075350 || sizeRateY->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A58, sizeRateY);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeRateY", sizeRateY);
 
     U1Pair *sizeRateZ = (U1Pair *)((unsigned char *)this + 0x48);
     if (sizeRateZ->m_x != g_rva01075350 || sizeRateZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A4C, sizeRateZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeRateZ", sizeRateZ);
 
     U1Pair *sizeDampingX = (U1Pair *)((unsigned char *)this + 0x54);
     if (sizeDampingX->m_x != g_rva01075350 || sizeDampingX->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A3C, sizeDampingX);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeDampingX", sizeDampingX);
 
     U1Pair *sizeDampingY = (U1Pair *)((unsigned char *)this + 0x60);
     if (sizeDampingY->m_x != g_rva01075350 || sizeDampingY->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A2C, sizeDampingY);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeDampingY", sizeDampingY);
 
     U1Pair *sizeDampingZ = (U1Pair *)((unsigned char *)this + 0x6c);
     if (sizeDampingZ->m_x != g_rva01075350 || sizeDampingZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114A1C, sizeDampingZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"SizeDampingZ", sizeDampingZ);
 
     U1Pair *angleZ = (U1Pair *)((unsigned char *)this + 0x78);
     if (angleZ->m_x != g_rva01075350 || angleZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114930, angleZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"AngleZ", angleZ);
 
     U1Pair *angularRateZ = (U1Pair *)((unsigned char *)this + 0x84);
     if (angularRateZ->m_x != g_rva01075350 || angularRateZ->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114920, angularRateZ);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"AngularRateZ", angularRateZ);
 
     U1Pair *angularDamping = (U1Pair *)((unsigned char *)this + 0x90);
     if (angularDamping->m_x != g_rva01075350 || angularDamping->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_0111490C, angularDamping);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"AngularDamping", angularDamping);
 
     unsigned int rotation = *(unsigned int *)((unsigned char *)this + 0x9c);
     if (rotation != 1)
-        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)g_01114900,
+        u1Call_005C7110((void *)&stream, (void *)flags, ( void *)"Rotation",
             (void **)((unsigned char *)&g_01110258 + rotation * 4));
 
     {
@@ -10982,11 +10882,11 @@ void SphereEmissionVolumeModuleTemplate::writeINI(File &file, unsigned int flags
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1ByteFlagged *isHollowSetting = (U1ByteFlagged *)((unsigned char *)this + 0x0c);
     if (isHollowSetting->m_flag)
-        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01113A7C, isHollowSetting);
+        u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"IsHollow", isHollowSetting);
 
     float *radius = (float *)((unsigned char *)this + 0x10);
     if (*radius != g_rva01075350)
-        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)g_0108EE10, radius);
+        u4Next005F5120((INI *)&stream, (void *)flags, ( void *)"Radius", radius);
 
     {
         writeStreamText(file,
@@ -11007,7 +10907,7 @@ void SphericalEmissionVelocityModuleTemplate::writeINI(File &file, unsigned int 
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
     U1Pair *speed = (U1Pair *)((unsigned char *)this + 0x0c);
     if (speed->m_x != g_rva01075350 || speed->m_y != g_rva01075350)
-        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_0109D84C, speed);
+        u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"Speed", speed);
 
     {
         writeStreamText(file,
@@ -11033,15 +10933,15 @@ void TerrainCollisionModuleTemplate::writeINI(File &file, unsigned int flags) co
     reinterpret_cast<BaseWriteFunction>(::Rva005FCB60WriteBase)(this, &file, &flags);
 
     _STL::basic_ostringstream<char, _STL::char_traits<char>, _STL::allocator<char> > stream(0x10);
-    u1Do_005C9030((void *)&stream, (void *)flags, ( void *)g_01114504,
+    u1Do_005C9030((void *)&stream, (void *)flags, ( void *)"HeightOffset",
         (U1Pair *)((unsigned char *)this + 0x14));
-    u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)g_01114434,
+    u1Do_005C71F0((void *)&stream, (void *)flags, ( void *)"EventFX",
         (U1CountedHolder *)((unsigned char *)this + 0x10));
-    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_011144EC,
+    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"OrientFXToTerrain",
         (U1ByteFlagged *)((unsigned char *)this + 0x20));
-    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01114424,
+    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"PerParticle",
         (U1ByteFlagged *)((unsigned char *)this + 0x08));
-    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)g_01114410,
+    u1Do_005C7410((void *)&stream, (void *)flags, ( void *)"KillAfterEvent",
         (U1ByteFlagged *)((unsigned char *)this + 0x09));
 
     {
