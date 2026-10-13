@@ -148,11 +148,11 @@ static NameKeyType parentPopupID = NAMEKEY_INVALID;
 static NameKeyType textEntryGameNameID = NAMEKEY_INVALID;
 static NameKeyType buttonCreateGameID = NAMEKEY_INVALID;
 static NameKeyType checkBoxAllowObserversID = NAMEKEY_INVALID;
-static NameKeyType textEntryGameDescriptionID = NAMEKEY_INVALID;
+NameKeyType textEntryGameDescriptionID = NAMEKEY_INVALID;	// retail .data, owned here (data_rows.csv); PopupHostGameInit.cpp reads it
 static NameKeyType buttonCancelID = NAMEKEY_INVALID;
-static NameKeyType textEntryLadderPasswordID = NAMEKEY_INVALID;
+NameKeyType textEntryLadderPasswordID = NAMEKEY_INVALID;	// retail .data, owned here (data_rows.csv); PopupHostGameInit.cpp reads it
 static NameKeyType comboBoxLadderNameID = NAMEKEY_INVALID;
-static NameKeyType textEntryGamePasswordID = NAMEKEY_INVALID;
+NameKeyType textEntryGamePasswordID = NAMEKEY_INVALID;	// retail .data, owned here (data_rows.csv); PopupHostGameInit.cpp reads it
 static NameKeyType checkBoxLimitArmiesID = NAMEKEY_INVALID;
 static NameKeyType checkBoxUseStatsID = NAMEKEY_INVALID;
 
