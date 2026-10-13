@@ -80,7 +80,7 @@ extern Radar *TheRadar;
 // The callback at 0x0036CFD0 is defined by BfmeConv1939.cpp. It returns
 // a full EAX integer and ignores the query interface's context argument.
 class BfmeThingDJ;
-Int __cdecl bfmeCheckDJ(BfmeThingDJ *thing);
+extern "C" Int __cdecl __identifier("?j_0002dc95@@YAXXZ")(BfmeThingDJ *thing);	// ILT 0x0042DC95, the ledger thunk row (-> matched bfmeCheckDJ 0x0036CFD0)
 
 // ?run@Rva00370730CastleMemberInterface@@QAEXHHH@Z
 void Rva00370730CastleMemberInterface::run( Int, Int, Int mode )
@@ -108,7 +108,7 @@ void Rva00370730CastleMemberInterface::run( Int, Int, Int mode )
 					if( module != 0 )
 					{
 						Rva0036ff70Callback callback =
-							reinterpret_cast<Rva0036ff70Callback>(bfmeCheckDJ);
+							reinterpret_cast<Rva0036ff70Callback>(__identifier("?j_0002dc95@@YAXXZ"));
 						if( ( (Rva0036ff70Module *)module )->query(
 							callback, 0 ) == 1 )
 						{

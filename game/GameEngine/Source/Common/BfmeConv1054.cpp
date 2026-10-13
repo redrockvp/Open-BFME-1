@@ -7,13 +7,13 @@ extern "C" void bfmeHookA1054(void);
 extern "C" void bfmeHookB1054(void);
 extern void j_00041de9();
 extern void j_000410dd();
-extern void j_00008b39();
+extern "C" void bfmeHookA1054();	// ILT 0x00408B39, the recorded _bfmeHookA1054
 extern void j_0002ed75();
 extern void j_00041c09();
 extern void j_0003c9cf();
 extern void j_00014556();
 extern void j_000391a8();
-extern void j_00011897();
+extern "C" void bfmeHookB1054();	// ILT 0x00411897, the recorded _bfmeHookB1054
 
 struct BfmeA1054
 {
@@ -99,7 +99,7 @@ void bfmeTailB1054Impl(BfmeB1054 *p)
 	p->m_bfme48 = z;
 	p->m_bfme4c = z;
 	p->m_bfmeH5 = bfmeMake1054(5);
-	p->m_bfmeFn5 = j_00008b39;
+	p->m_bfmeFn5 = bfmeHookA1054;
 	p->m_bfme58 = z;
 	p->m_bfme5c = z;
 	bfmeTailA1054Cdecl(reinterpret_cast<BfmeA1054 *>(p));
@@ -150,7 +150,7 @@ void bfmeCategoryHead1054(BfmeCategoryHead1054 *p)
 	p->m_zero18 = z;
 	p->m_zero1c = z;
 	p->m_key2 = bfmeMake1054(2);
-	p->m_callback2 = j_00011897;
+	p->m_callback2 = bfmeHookB1054;
 	p->m_zero28 = z;
 	p->m_zero2c = z;
 	bfmeTailB1054Cdecl(reinterpret_cast<BfmeB1054 *>(p));
