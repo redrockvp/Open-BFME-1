@@ -104,7 +104,7 @@ struct ParticleSystemFieldTable
 };
 
 extern unsigned char g_012F6850[];
-extern volatile unsigned char g_012F6923;
+volatile unsigned char g_Va012F6923 = 0; // retail .data, owned here (data_rows.csv)
 extern const ParticleSystemFieldTable g_0110F92C;
 extern "C" const ParticleSystemFieldTable
 	__identifier("?g_0110F92C@@3UParticleSystemFieldTable@@B") =
@@ -134,7 +134,7 @@ void INI::parseParticleSystemDefinition(INI *ini)
 		new (sysTemplate) ParticleSystemTemplate(name);
 	}
 
-	if (!g_012F6923)
+	if (!g_Va012F6923)
 	{
 		// The retail System field table starts at 0x0110F92C.
 		initParticleSystemFields(
@@ -143,7 +143,7 @@ void INI::parseParticleSystemDefinition(INI *ini)
 			g_0110F92C;
 		// This intrinsic emits no instruction and fixes the retail copy order.
 		_ReadWriteBarrier();
-		g_012F6923 = 1;
+		g_Va012F6923 = 1;
 	}
 
 	ini->initFromINI(sysTemplate,

@@ -97,7 +97,8 @@ public:
 
 extern Rva008AE770Stack Rva008AE770TheStack;
 
-extern int key013384C0, key013384C8;
+int g_Va013384C0 = 0; // retail .data, owned here (data_rows.csv)
+int g_Va013384C8 = 0; // retail .data, owned here (data_rows.csv)
 
 class BfmeTab1024
 {
@@ -270,7 +271,7 @@ struct RvaEmitState1236
 
 	AptValue *getValue(void)
 	{
-		return m_table != 0 ? (AptValue *)m_table->bfmeFind1024((int)&key013384C8) : 0;
+		return m_table != 0 ? (AptValue *)m_table->bfmeFind1024((int)&g_Va013384C8) : 0;
 	}
 };
 
@@ -319,7 +320,7 @@ void BfmeB1236::bfmeEmit1236(void *a, int unused, void *c)
 			if (context == 0)
 				return;
 			Rva00899770 *created = Rva008AE770TheStack.createString(
-				this, 0, (BfmeStrVKI *)&key013384C0, 1, 1, 0);
+				this, 0, (BfmeStrVKI *)&g_Va013384C0, 1, 1, 0);
 			created->addRef();
 			Rva8CD130String name;
 			name = ((Fields00898F60 *)this)->underscoreFields00898F60();

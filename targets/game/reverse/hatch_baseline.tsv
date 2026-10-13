@@ -506,6 +506,7 @@ address_global	game/GameEngine/Source/Common/GlobalFlagClearers_05.cpp	g_Va0134C
 address_global	game/GameEngine/Source/Common/GlobalFlagClearers_05.cpp	g_Va0134C6B8	2
 address_global	game/GameEngine/Source/Common/GlobalFlagClearers_05.cpp	g_Va0134FB14	2
 address_global	game/GameEngine/Source/Common/HeaderedDeleteDestructors.cpp	g_Va01337830	3
+address_global	game/GameEngine/Source/Common/INI/INIParticleSys.cpp	g_Va012F6923	3	allow=3edd999138ed8b265f6bdba0b30bd31c4a15b7a5
 address_global	game/GameEngine/Source/Common/INI/INIWaterTextureList.cpp	g_Va012ED648	2	allow=865a0a3e28a7732ecf5b4e166e4645d7f3c2d829
 address_global	game/GameEngine/Source/Common/INI/INI_ExperienceScalarTable.cpp	g_Va010EA910	2	allow=55ba4d71276a585802a404c87bfc023bbdc5cd09
 address_global	game/GameEngine/Source/Common/Q2ScatteredFieldConstructor.cpp	g_Rva00789720Table	2
@@ -782,14 +783,19 @@ address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPla
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PopupPlayerInfo_responses.cpp	g_Rva012F73D4	2
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PositionStartSpotsBFME.cpp	g_Rva012F15E8	5
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/PositionStartSpotsBFME.cpp	g_Rva012F15EC	5
+address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ReplayMenuReallyLoadReplay.cpp	g_Va012F410C	2	allow=45b3abf9d4c5043a42c07b2c9d71e5283ba18361
+address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ReplayMenuReallyLoadReplay.cpp	g_Va012F4118	2	allow=45b3abf9d4c5043a42c07b2c9d71e5283ba18361
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/Rva004EA5F0NotificationModeFive.cpp	g_Va012F423C	2
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/Rva004EA5F0NotificationModeFive.cpp	g_Va012F4248	2
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/ShowQuitMenu.cpp	g_Va012F49B0	2
+address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenuShutdown_Thunk.cpp	g_Va012F45C0	2	allow=4dbeead43cee84ecb1f16d6e19290dad05e455ed
+address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Menus/WOLLobbyMenuShutdown_Thunk.cpp	g_Va012F4628	2	allow=4dbeead43cee84ecb1f16d6e19290dad05e455ed
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/ResetInGameChat.cpp	g_Rva005127A0InGameChat	3
 address_global	game/GameEngine/Source/GameClient/GUI/GUICallbacks/Rva005127A0InGameChatForward.cpp	g_Rva005127A0InGameChat	3
 address_global	game/GameEngine/Source/GameClient/GUI/InGameChatDestructor.cpp	g_Rva005127A0InGameChat	3
 address_global	game/GameEngine/Source/GameClient/GUI/OnlineShellDestructor.cpp	g_Rva005127A0InGameChat	2
 address_global	game/GameEngine/Source/GameClient/GUI/OnlineShellHandleKey.cpp	g_Rva005127A0InGameChat	3
+address_global	game/GameEngine/Source/GameClient/GUI/ProcessAnimateWindowSlideFromBottomTimed_initReverseAnimateWindow_Thunk.cpp	g_Va012ED898	3	allow=bee60539071735a2ec3567e448be582e76b74491
 address_global	game/GameEngine/Source/GameClient/GUI/Rva00462E80RegisterNode.cpp	g_Rva00462DE0_table	2
 address_global	game/GameEngine/Source/GameClient/GUI/Rva00472000Data.cpp	g_Rva00CF7608	1
 address_global	game/GameEngine/Source/GameClient/GUI/Rva007833E0AptScaledTransform.cpp	g_Rva00F06914Transform	2
@@ -809,6 +815,7 @@ address_global	game/GameEngine/Source/GameClient/GUI/SkirmishScreenShowError.cpp
 address_global	game/GameEngine/Source/GameClient/GameClient.cpp	g_Rva0107301CEmptyString	2
 address_global	game/GameEngine/Source/GameClient/HouseColorSystem.cpp	g_Va010EBD64	2	allow=446496c6481d057a16a17fde9745146982a96357
 address_global	game/GameEngine/Source/GameClient/HouseColorSystem.cpp	g_Va010EBD74	2	allow=446496c6481d057a16a17fde9745146982a96357
+address_global	game/GameEngine/Source/GameClient/LivingWorld/Rva00613D60.cpp	g_Va012F7090	4	allow=bdb2f7293bbdd17e1b3ad877df2e99d688a49a2d
 address_global	game/GameEngine/Source/GameClient/MessageStream/CommandXlat.cpp	g_Rva005127A0InGameChat	2
 address_global	game/GameEngine/Source/GameClient/MessageStream/CommandXlatVoice.cpp	g_Rva005127A0InGameChat	1
 address_global	game/GameEngine/Source/GameClient/Rva006A9800.cpp	g_Rva13595EC	2
@@ -868,6 +875,8 @@ address_global	game/GameEngine/Source/GameLogic/Pathfinder/PathfinderFindSafePat
 address_global	game/GameEngine/Source/GameLogic/Pathfinder/PathfinderValidMovementTerrain.cpp	g_Va012B49FC	2
 address_global	game/GameEngine/Source/GameLogic/ScriptEngine/Parameter_WriteParameter_Thunk.cpp	g_bfmeRva012AA068	4
 address_global	game/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngineAttackInfo.cpp	g_Rva00F36E5C	3
+address_global	game/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngineRva00347E60.cpp	g_Va012F0760	2	allow=5af96b55d634533b28c67ec91e59ea223cea29d0
+address_global	game/GameEngine/Source/GameLogic/ScriptEngine/ScriptEngineRva00347E60.cpp	g_Va012F0764	2	allow=5af96b55d634533b28c67ec91e59ea223cea29d0
 address_global	game/GameEngine/Source/GameLogic/System/BfmeCellGrid.cpp	g_Rva00F36E5C	2
 address_global	game/GameEngine/Source/GameLogic/System/WeatherData.cpp	g_Va010EBC6C	2	allow=15e3d0ed5efddb254b66b73f63be59976a847f22
 address_global	game/GameEngine/Source/GameLogic/System/WeatherData.cpp	g_Va010EBC7C	2	allow=15e3d0ed5efddb254b66b73f63be59976a847f22
@@ -876,6 +885,7 @@ address_global	game/GameEngine/Source/GameNetwork/GameSpy/Rva00872950.cpp	g_Rva0
 address_global	game/GameEngine/Source/GameNetwork/GameSpy/Thread/BuddyThreadClassThreadFunction.cpp	g_Rva012F71BC	24
 address_global	game/GameEngine/Source/GameNetwork/GameSpyOverlay.cpp	g_Va012F70A4	10
 address_global	game/GameEngine/Source/GameNetwork/GameSpyOverlay_GSMessageBoxOkCancel.cpp	g_Va012F70A4	4
+address_global	game/GameEngine/Source/GameNetwork/Network_update.cpp	g_Va012F7728	2	allow=fbfd2eb404b077af44fab39cb7963e33f2c982b5
 address_global	game/GameEngine/Source/GameNetwork/Rva007E8D30FeslSetField.cpp	g_Rva011293A0HexFirst	2
 address_global	game/GameEngine/Source/GameNetwork/Rva007E8D30FeslSetField.cpp	g_Rva011294A8HexSecond	2
 address_global	game/GameEngine/Source/GameNetwork/Rva007E9310AccountWriter.cpp	g_Rva0130A50CTxn	2
@@ -930,6 +940,7 @@ address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/Drawable/Draw/W
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/GUI/AptDisplayStringAllocation_ctor.cpp	g_Va012BB864	2	allow=621684bc8c41539052e3afc76e8a04d286d9cf61
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/GUI/Rva00786060AptRoundedBounds.cpp	g_Rva00F0692CTransform	2
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/RTS3DSceneCustomizedRender.cpp	g_bfmeRva00EF9C32	2
+address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/RoadTypeLoadTexture.cpp	g_Va012F9C31	2	allow=20496a6cb1512f6233b11fcf22f4dbc5a372e3fe
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/Rva006D53A0Update.cpp	g_Rva00F36E5C	3
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/Rva006D5750Update.cpp	g_Rva00F36E5C	3
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/Rva006D5B10Update.cpp	g_Rva00F36E5C	3
@@ -951,6 +962,8 @@ address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/W3DTreeBufferRv
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/Water/WaterRenderObjUpdate.cpp	g_Rva00EEF418	3
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMapRva0074ACB0Load.cpp	g_Va012A7A48	2
 address_global	game/GameEngineDevice/Source/W3DDevice/GameClient/WorldHeightMapRva0074ACB0Load.cpp	g_Va012ED5E0	2
+address_global	game/Libraries/Source/Apt/BfmeB1236Emit.cpp	g_Va013384C0	2	allow=8e7a7d5f5d38ac88a6a1b6161f3b182e9c4a3a76
+address_global	game/Libraries/Source/Apt/BfmeB1236Emit.cpp	g_Va013384C8	2	allow=8e7a7d5f5d38ac88a6a1b6161f3b182e9c4a3a76
 address_global	game/Libraries/Source/Benchmark/nbench1.c	g_Rva0107301CEmptyString	9
 address_global	game/Libraries/Source/DirtySock/ProtoSSLParseCertificate.c	g_Rva0112C9C8	4
 address_global	game/Libraries/Source/DirtySock/ProtoSSLParseCertificate.c	g_Rva0112CB48	3
@@ -1059,12 +1072,17 @@ address_global	game/Libraries/Source/EA/Apt/Rva008D2AA0.cpp	g_Va013387D8	2
 address_global	game/Libraries/Source/EA/Apt/Rva8CE890PushNamedString.cpp	g_Va01338710String	2
 address_global	game/Libraries/Source/WWVegas/WW3D2/AnonymousGlobalFlagCleanup_00C4FB46.cpp	g_Va01305A78	2
 address_global	game/Libraries/Source/WWVegas/WW3D2/AnonymousGlobalFlagCleanup_00C51A90.cpp	g_Va01306D4C	2
+address_global	game/Libraries/Source/WWVegas/WW3D2/DX8WrapperDeviceLockInfo.cpp	g_Va013405D4	2	allow=b832c461b8e63aa6e40aa17be587ac74d8655f76
+address_global	game/Libraries/Source/WWVegas/WW3D2/DX8WrapperDeviceLockInfo.cpp	g_Va013405DC	2	allow=b832c461b8e63aa6e40aa17be587ac74d8655f76
+address_global	game/Libraries/Source/WWVegas/WW3D2/DX8WrapperDeviceLockInfo.cpp	g_Va013405E0	2	allow=b832c461b8e63aa6e40aa17be587ac74d8655f76
 address_global	game/Libraries/Source/WWVegas/WW3D2/Rva00C71270PoolBDtor.cpp	g_Rva00C71270Spacer1	1
 address_global	game/Libraries/Source/WWVegas/WW3D2/Rva00C71270PoolBDtor.cpp	g_Rva00C71270Vec	1
 address_global	game/Libraries/Source/WWVegas/WW3D2/SurfaceClass_DrawPixel.cpp	g_Rva00F36E5C	3
 address_global	game/Libraries/Source/WWVegas/WW3D2/SurfaceClass_Rva008FCF40.cpp	g_Rva00F36E5C	2
 address_global	game/Libraries/Source/WWVegas/WW3D2/SurfaceClass_ScaleChannels008FCAB0.cpp	g_Rva00F36E5C	3
 address_global	game/Libraries/Source/WWVegas/WW3D2/W3DRadarGetSurfaceLevel.cpp	g_Rva00F36E5C	3
+address_global	game/Libraries/Source/WWVegas/WW3D2/WW3D_Begin_Render_Bfme.cpp	g_Va0133F414	2	allow=e9c7062a6762bcf04b1d176566074733e7b8ab58
+address_global	game/Libraries/Source/WWVegas/WW3D2/WW3D_Begin_Render_Bfme.cpp	g_Va0133F41C	2	allow=e9c7062a6762bcf04b1d176566074733e7b8ab58
 address_global	game/Libraries/Source/WWVegas/WW3D2/statistics.cpp	g_Va01346E48	2
 address_global	game/Libraries/Source/WWVegas/WW3D2/surfaceclass.cpp	g_Rva00F36E5C	3
 address_global	game/Libraries/Source/WWVegas/WW3D2/surfaceclass_lock_discard.cpp	g_Rva00F36E5C	2

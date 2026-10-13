@@ -196,8 +196,8 @@ protected:
 	double m_17658;
 };
 
-extern int g_scriptFrame012F0760;
-extern int g_scriptFrame012F0764;
+int g_Va012F0764 = 0; // retail .data, owned here (data_rows.csv)
+int g_Va012F0760 = 0; // retail .data, owned here (data_rows.csv)
 extern bool LogicCanAppContinue;
 extern bool g_012F075C;
 #define ClientCanAppContinue g_012F075C
@@ -240,5 +240,5 @@ ScriptEngine::ScriptEngine()
 	setGlobalDifficulty(1);
 	LogicCanAppContinue = true;
 	ClientCanAppContinue = true;
-	g_scriptFrame012F0760 = g_scriptFrame012F0764 = 0;
+	g_Va012F0764 = g_Va012F0760 = 0;
 }
