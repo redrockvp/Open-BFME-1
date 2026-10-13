@@ -154,7 +154,10 @@ V3_DERIVED_PLAIN( Rva005ED0D0, Rva005ED110 )
 extern "C" void *bfmeVftCUAb[];
 extern const char g_0110F9AC[], g_011106F4[];
 extern const char g_0111182C[], g_01111828[], g_01111824[];
-extern const char g_011132F0[], g_011132EC[], g_011132E8[], g_011132D4[];
+extern "C" void *__identifier("??_7LightningEmissionModule@FXParticleSystem@@6B@")[];	// retail 0x011132D4
+extern "C" void *__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BParticleModuleSnapshotSlice@1@@")[];	// retail 0x011132E8
+extern "C" void *__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BParticleModuleCategorySlice@1@@")[];	// retail 0x011132EC
+extern "C" void *__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BT1A1_005DD290@@@")[];	// retail 0x011132F0
 extern const char g_01112420[], g_0111241C[], g_01112418[], g_01112404[];
 
 struct GenNode_006fa270
@@ -251,10 +254,10 @@ Rva005EDFA0FirstBase::Rva005EDFA0FirstBase(
 Rva005EDFA0::Rva005EDFA0( const Rva005EDFA0 &other )
 	: Rva005EDFA0Middle( other ), FXParticleSystem::LightningEmissionInfo( other )
 {
-	Rva005EDFA0FirstBase::m_vftable = (void *)g_011132F0;
-	Rva005EDFA0SecondBase::m_vftable = (void *)g_011132EC;
-	Rva005EDFA0ThirdBase::m_vftable = (void *)g_011132E8;
-	FXParticleSystem::LightningEmissionInfo::m_vftable = (void *)g_011132D4;
+	Rva005EDFA0FirstBase::m_vftable = (void *)__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BT1A1_005DD290@@@");
+	Rva005EDFA0SecondBase::m_vftable = (void *)__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BParticleModuleCategorySlice@1@@");
+	Rva005EDFA0ThirdBase::m_vftable = (void *)__identifier("??_7LightningEmissionModule@FXParticleSystem@@6BParticleModuleSnapshotSlice@1@@");
+	FXParticleSystem::LightningEmissionInfo::m_vftable = (void *)__identifier("??_7LightningEmissionModule@FXParticleSystem@@6B@");
 }
 
 class Rva005EDF60 : public Rva005EDFA0
