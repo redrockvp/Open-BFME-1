@@ -155,16 +155,7 @@ extern const char g_feslTransactionIdKey[4];
 extern int g_bfmeKeyDVHD;			// 0x0112B588
 extern "C" char bfmeInfoDFI[];		// 0x0112B554 (aliases bfmeInfoDFJ)
 extern void *g_0112C7C0;			// route slot handed to Rva007F93E0
-extern const char g_010F91BC[];
-extern const char g_01102DE0[];
-extern const char g_0112B568[];
-extern const char g_0112B590[];
-extern const char g_0112C878[];
-extern const char g_0112C7D8[];
-extern const char g_0112C88C[];
-extern const char g_0112C89C[];
 extern const char g_0112C8A0[];
-extern const char g_0112C8B4[];
 extern const char g_0112C8B8[];
 
 class Gen007F0130
@@ -200,7 +191,7 @@ void Rva00809E40Owner::rva00809E40( Rva007E8810Message *input )
 	{
 		Rva007EB810Get()->report( g_0112C8B8 );
 		message.m_field20 = 'jden';
-		message.addString( (const char *)&g_bfmeKeyDVHD, g_0112C8B4 );
+		message.addString( (const char *)&g_bfmeKeyDVHD, "f" );
 		Rva007F93E0( &message, (void *)&g_0112C7C0, m_routeOwner );
 		return;
 	}
@@ -208,7 +199,7 @@ void Rva00809E40Owner::rva00809E40( Rva007E8810Message *input )
 	{
 		Rva007EB810Get()->report( g_0112C8A0 );
 		message.m_field20 = 'jden';
-		message.addString( (const char *)&g_bfmeKeyDVHD, g_0112C89C );
+		message.addString( (const char *)&g_bfmeKeyDVHD, "c" );
 		Rva007F93E0( &message, (void *)&g_0112C7C0, m_routeOwner );
 		return;
 	}
@@ -216,14 +207,14 @@ void Rva00809E40Owner::rva00809E40( Rva007E8810Message *input )
 	int index = slot->getIndex();
 	if( m_game == 0 )
 		Rva007EB810Get()->fail(
-			g_0112C88C,
-			g_0112C7D8,
+			"mHostedLanGame",
+			"\\views\\feslbuild_main\\jabba\\fesl\\source\\gamebrowser\\lantheateremulator.cpp",
 			0x307 );
 	Rva00809E40Record **players = m_game->m_players;
 	if( players[ index ] != 0 )
 		Rva007EB810Get()->fail(
-			g_0112C878,
-			g_0112C7D8,
+			"!players[pindex]",
+			"\\views\\feslbuild_main\\jabba\\fesl\\source\\gamebrowser\\lantheateremulator.cpp",
 			0x309 );
 
 	void *raw = Gen007F0130::operator new( 0x38 );
@@ -238,23 +229,23 @@ void Rva00809E40Owner::rva00809E40( Rva007E8810Message *input )
 	++m_game->m_state;
 	record->m_powerSabotagedTillFrame = state;
 	record->m_field14 = reinterpret_cast< Rva007E8810Message * >( input )->getInt(
-		g_0112B568, 0 );
+		"GID", 0 );
 	Rva007F93E0( &message, (void *)&g_0112C7C0, m_routeOwner );
 
 	{
 		char first[ 0x20 ];
-		input->getString( g_010F91BC, first, 0x20 );
+		input->getString( "NAME", first, 0x20 );
 		{
 			char second[ 0x20 ];
-			input->getString( g_01102DE0, second, 0x20 );
+			input->getString( "IP", second, 0x20 );
 			ji_009f70ba( record->m_field18, second, 0x20 );
 		}
 
 		BfmeC994 request( buffer, 0x40 );
 		request.m_category = 'EGRQ';
-		request.addString( g_010F91BC, first );
+		request.addString( "NAME", first );
 		request.addInt( bfmeInfoDFI, record->m_powerSabotagedTillFrame );
-		request.addString( g_0112B590, "ticket" );
+		request.addString( "TICKET", "ticket" );
 		m_sender->send( &request );
 	}
 }
