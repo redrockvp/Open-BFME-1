@@ -346,8 +346,8 @@ extern char __cdecl bfmeUnlock1179();
 extern void __cdecl d_009064f0();
 extern volatile int g_bfmeOwnerVHM;
 extern volatile int g_bfmeDepthVHM;
-extern unsigned char g_0133F4A8[0x40];
-extern unsigned char g_0133F548[0x40];
+unsigned char g_Va0133F4A8[0x40]; // retail .data, owned here (data_rows.csv)
+unsigned char g_Va0133F548[0x40]; // retail .data, owned here (data_rows.csv)
 extern unsigned char g_0133F500[0x40];
 extern unsigned g_01340570;
 extern void *g_013405CC;
@@ -407,8 +407,8 @@ bool DX8Wrapper::Init(void *hwnd, bool lite)
 	BFME_RVA_G32(g_bfmeEventVHM) = (unsigned)CreateMutexA(0, 0, 0);
 	W3DRadarResetLock();
 
-	memset(g_0133F4A8, 0, 0x40);
-	memset(g_0133F548, 0, 0x40);
+	memset(g_Va0133F4A8, 0, 0x40);
+	memset(g_Va0133F548, 0, 0x40);
 	// Retail loads the count and destination before seven scalar stores, then runs rep stosd after them.
 	// The measured C++ variants kept the clear setup beside rep stosd, so this block splits those instructions.
 	__asm {
