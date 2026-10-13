@@ -271,7 +271,7 @@ class BaseHeightMapRenderObjClass;
 extern BaseHeightMapRenderObjClass *TheTerrainRenderObject;
 extern const FrustumClass *shadowCameraFrustum;
 static int drawStartX, drawStartY, drawEdgeX, drawEdgeY;
-static int nShadowDecalVertsInBuf,nShadowDecalIndicesInBuf;
+static int nShadowDecalVertsInBuf,nShadowDecalIndicesInBuf;	// TU-local as retail compiled it (an extern reorders the stores); W3DProjectedShadow.cpp owns the retail slots
 class W3DProjectedShadowManager { public:
  void *vptr;
  Shadow007B6D30 *m_shadowList,*m_decalList,*m_simpleDecalList;
