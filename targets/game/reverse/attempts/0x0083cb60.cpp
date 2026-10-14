@@ -1,5 +1,5 @@
 // ?do_get@?$money_get@DV?$istreambuf_iterator@DV?$char_traits@D@_STL@@@_STL@@@_STL@@MBE?AV?$istreambuf_iterator@DV?$char_traits@D@_STL@@@2@V32@0_NAAVios_base@2@AAHAAV?$basic_string@DV?$char_traits@D@_STL@@V?$allocator@D@2@@2@@Z
-// partial score=0.33 date=2026-09-16
+// partial score=0.0 date=2026-09-16
 // cl: /O2 /MD /D_STLP_USE_STATIC_LIB /EHsc
 // stlport
 //
