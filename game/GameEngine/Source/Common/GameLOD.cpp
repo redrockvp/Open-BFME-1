@@ -1,4 +1,4 @@
-// cl: /DNDEBUG /MD /EHsc /Iinputs/reference/shims/ini /Iinputs/reference/shims/gamelod /Iinputs/reference/shims/ini_noinline /Iinputs/reference/shims/sweep /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib
+// cl: /DNDEBUG /MD /EHsc /Iinputs/reference/shims/ini /Iinputs/reference/shims/gamelod /Iinputs/reference/shims/userprefs_audio /Iinputs/reference/shims/ini_lod /Iinputs/reference/shims/sweep /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Include /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/GameEngine/Source /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Include /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas /Iinputs/reference/CnC_Generals_Zero_Hour/GeneralsMD/Code/Libraries/Source/WWVegas/WWLib
 // stlport
 /*
 **	Command & Conquer Generals Zero Hour(tm)
@@ -328,11 +328,159 @@ LODPresetInfo *GameLODManager::newLODPreset(StaticGameLODLevel index)
 	return NULL;
 }
 
-// ?init@GameLODManager@@QAEXXZ present-unmatched
-// Retail body 0x0007EEB0 is 1074 bytes. Its GameLOD.ini,
-// GameLODPresets.ini, Benchmark.txt, and BenchProfile format references identify
-// the initialization flow; do not confuse it with applyStaticLODLevel, whose
-// matched caller routes through ILT 0x00036A11 to 0x0007E9B0.
+class BfmeS1148;
+extern void bfmeGo1148(BfmeS1148 *);
+struct Rva005A00B0AudioClient;
+extern Rva005A00B0AudioClient *TheAudioClientUpdate;
+extern void j_00023dad(void);
+extern void j_0001391c(void);
+extern void j_0000d53a(void);
+extern void j_0001bbf3(void);
+extern void j_00027a52(void);
+
+// ?init@GameLODManager@@QAEXXZ
+// Retail body 0x0007EEB0 is 1074 bytes. Its GameLOD.ini, GameLODPresets.ini,
+// Benchmark.txt and BenchProfile format references identify the initialization
+// flow; do not confuse it with applyStaticLODLevel, whose matched caller routes
+// through ILT 0x00036A11 to 0x0007E9B0. The local INI is retail's 0x848-byte
+// object (ini_lod shim) and setAudioLOD is the matched OptionPreferences member
+// at 0x00092810 (userprefs_audio shim); the manager refresh, the hardware probe
+// and the other preference reads go through their ILT thunks (0x00023DAD,
+// 0x0001391C, 0x0000D53A, 0x0001BBF3, 0x00027A52).
+void GameLODManager::init(void)
+{
+	struct BfmeInitLODPresetInfo
+	{
+		Int m_cpuType;
+		Int m_mhz;
+		Real m_cpuPerfIndex;
+		Int m_videoType;
+		Int m_memory;
+		Int m_unknown14;
+		Int m_width;
+		Int m_height;
+	};
+	struct BfmeInitLODManager
+	{
+		char pad000[0x180];
+		BfmeInitLODPresetInfo m_lodPresets[5][32];
+		BenchProfile m_benchProfiles[16];
+		StaticGameLODLevel m_currentStaticLOD;
+		StaticGameLODLevel m_pendingStaticLOD;
+		DynamicGameLODLevel m_currentDynamicLOD;
+		Int m_audioLOD;
+		Int m_numParticleGenerations;
+		Int m_dynamicParticleSkipMask;
+		Int m_numDebrisGenerations;
+		Int m_dynamicDebrisSkipMask;
+		Real m_slowDeathScale;
+		Int m_minDynamicParticlePriority;
+		Int m_minDynamicParticleSkipPriority;
+		Bool m_videoPassed;
+		Bool m_cpuPassed;
+		Bool m_memPassed;
+		char pad16ef;
+		Int m_numLevelPresets[5];
+		Int m_numBenchProfiles;
+		StaticGameLODLevel m_idealDetailLevel;
+		Int m_videoChipType;
+		Int m_unknown1710;
+		CpuType m_cpuType;
+		Int m_numRAM;
+		Int m_cpuFreq;
+		Real m_intBenchIndex;
+		Real m_floatBenchIndex;
+		Real m_memBenchIndex;
+		Real m_compositeBenchIndex;
+		Int m_currentTextureReduction;
+		Int m_reallyLowMHz;
+		Int m_audioLowMHz;
+	};
+	typedef Bool (__cdecl *TestMinimumRequirements)(ChipsetType *, CpuType *, Int *, Int *, Real *, Real *, Real *);
+	INI ini;
+	BfmeInitLODManager *state = (BfmeInitLODManager *)this;
+	ini.load( AsciiString( "Data\\INI\\GameLOD.ini" ), INI_LOAD_OVERWRITE, NULL );
+	ini.load( AsciiString( "Data\\INI\\GameLODPresets.ini" ), INI_LOAD_OVERWRITE, NULL );
+	typedef void (__fastcall *ManagerMethod)(GameLODManager *);
+	((ManagerMethod)j_00023dad)( this );
+	OptionPreferences optionPref;
+	Int userSetDetail = optionPref.getStaticGameDetail();
+	typedef Int (__fastcall *PreferenceGetter)(OptionPreferences *);
+	state->m_idealDetailLevel = (StaticGameLODLevel)((PreferenceGetter)j_0000d53a)( &optionPref );
+	state->m_pendingStaticLOD = (StaticGameLODLevel)((PreferenceGetter)j_0001bbf3)( &optionPref );
+	if ( state->m_pendingStaticLOD == -1 && state->m_idealDetailLevel != -1 )
+	{
+		optionPref["FixedStaticGameLOD"] = getStaticGameLODLevelName( state->m_idealDetailLevel );
+		state->m_pendingStaticLOD = state->m_idealDetailLevel;
+	}
+	Int audioLOD = ((PreferenceGetter)j_00027a52)( &optionPref );
+	((TestMinimumRequirements)j_0001391c)( NULL, &state->m_cpuType, &state->m_cpuFreq, &state->m_numRAM, NULL, NULL, NULL );
+	if ( (Real)state->m_numRAM / (Real)(256 * 1024 * 1024) >= PROFILE_ERROR_LIMIT )
+		state->m_memPassed = TRUE;
+	if ( state->m_idealDetailLevel == -1 || ((unsigned char *)TheWritableGlobalData)[0xaac] || audioLOD == -1 )
+	{
+		if ( state->m_cpuType == XX || ((unsigned char *)TheWritableGlobalData)[0xaac] )
+		{
+			((TestMinimumRequirements)j_0001391c)( NULL, NULL, NULL, NULL, &state->m_intBenchIndex, &state->m_floatBenchIndex, &state->m_memBenchIndex );
+			if ( ((unsigned char *)TheWritableGlobalData)[0xaac] )
+			{
+				FILE *fp = fopen( "Benchmark.txt", "w" );
+				if ( fp )
+				{
+					fprintf( fp, "BenchProfile = %s %d %f %f %f", CPUNames[state->m_cpuType], state->m_cpuFreq, state->m_intBenchIndex, state->m_floatBenchIndex, state->m_memBenchIndex );
+					fclose( fp );
+				}
+			}
+			state->m_compositeBenchIndex = state->m_intBenchIndex + state->m_floatBenchIndex;
+			Int currentLevel = 1;
+			BenchProfile *prof = state->m_benchProfiles;
+			state->m_cpuType = P3;
+			state->m_cpuFreq = 1000;
+			for ( Int k = 0; k < state->m_numBenchProfiles; ++k )
+			{
+				if ( state->m_intBenchIndex / prof->m_intBenchIndex >= PROFILE_ERROR_LIMIT && state->m_floatBenchIndex / prof->m_floatBenchIndex >= PROFILE_ERROR_LIMIT && state->m_memBenchIndex / prof->m_memBenchIndex >= PROFILE_ERROR_LIMIT )
+				{
+					for ( Int i = 3; i >= 1; --i )
+					{
+						BfmeInitLODPresetInfo *preset = &state->m_lodPresets[i][0];
+						for ( Int j = 0; j < state->m_numLevelPresets[i]; ++j )
+						{
+							if ( prof->m_cpuType == preset->m_cpuType && (Real)prof->m_mhz / (Real)preset->m_mhz >= PROFILE_ERROR_LIMIT )
+							{
+								currentLevel = i;
+								state->m_cpuType = (CpuType)prof->m_cpuType;
+								state->m_cpuFreq = prof->m_mhz;
+								break;
+							}
+							++preset;
+						}
+						if ( currentLevel >= i )
+							break;
+					}
+				}
+				++prof;
+			}
+		}
+	}
+	if ( userSetDetail == 5 )
+		bfmeGo1148( (BfmeS1148 *)&optionPref );
+	setStaticLODLevel( (StaticGameLODLevel)userSetDetail );
+	if ( audioLOD == -1 )
+	{
+		audioLOD = state->m_cpuFreq >= state->m_audioLowMHz;
+		optionPref.setAudioLOD( audioLOD );
+		optionPref.write();
+	}
+	if ( audioLOD >= 0 && audioLOD < 2 && state->m_audioLOD != audioLOD )
+	{
+		state->m_audioLOD = audioLOD;
+		if ( TheAudioClientUpdate )
+		{
+			typedef void (__fastcall *AudioLODChanged)( Rva005A00B0AudioClient * );
+			((AudioLODChanged)(*(void ***)TheAudioClientUpdate)[92])( TheAudioClientUpdate );
+		}
+	}
+}
 
 // ?refreshCustomStaticLODLevel@GameLODManager@@IAEXXZ present-unmatched
 void GameLODManager::refreshCustomStaticLODLevel(void)
