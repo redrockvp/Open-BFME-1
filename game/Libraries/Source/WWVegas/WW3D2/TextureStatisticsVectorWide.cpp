@@ -8,7 +8,7 @@
 // compiler still emits the array-constructor-iterator call. Fresh tags per
 // NEAR-TWIN policy; identity of the owning vector/class is NOT recovered.
 
-#include <new.h>
+#include <new>
 
 extern void *__cdecl operator new[](size_t size);
 extern void __cdecl operator delete[](void *pointer);
