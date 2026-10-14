@@ -1,6 +1,7 @@
-// ?visit@Rva21ABF0Worker@@QAEXPAX@Z
-// partial score=1.0 date=2026-10-13
 // cl: /DNDEBUG /DWIN32 /MD /EHsc /D_STLP_USE_STATIC_LIB /Igame/Libraries/Source/WWVegas/WWLib /Igame/Libraries/Source/WWVegas/WWMath
+// Address-derived Rva21ABF0Worker::visit, called by the matched Rva21ABF0RingDispatch::dispatchAll
+// through ILT 0x3288. The kind-of mask is a local 192-bit set passed by reference to the pinned
+// Thing::isAnyKindOf ILT, spelled as BitFlags<116> the way the matched TUs spell it.
 // stlport
 struct Rva21ABF0Node
 {
@@ -146,15 +147,10 @@ public:
 	virtual void slot05(void);
 	virtual void slot06(void);
 	virtual void slot07(void);
-	bool isAnyKindOf(const BitFlags<192> &mask) const;
+	bool isAnyKindOf(const BitFlags<116> &mask) const;
 };
 
-struct Coord3D
-{
-	Real x;
-	Real y;
-	Real z;
-};
+#include "../../../Libraries/Include/Lib/Coord3D.h"
 
 class Gen_00411DD0
 {
@@ -208,7 +204,7 @@ public:
 	virtual Real getMaxHealth(void);
 };
 
-class Rva21ABF0PhysicsBehavior
+class PhysicsBehavior
 {
 public:
 	void applyMotiveForce(const Coord3D *force);
@@ -264,9 +260,9 @@ public:
 	{
 		return (Rva21ABF0BodyModule *)m_pointer200;
 	}
-	Rva21ABF0PhysicsBehavior *getPhysicsBehavior(void) const
+	PhysicsBehavior *getPhysicsBehavior(void) const
 	{
-		return (Rva21ABF0PhysicsBehavior *)m_pointer208;
+		return (PhysicsBehavior *)m_pointer208;
 	}
 
 	unsigned char m_unknown04[4];
@@ -395,7 +391,7 @@ void Rva21ABF0Worker::visit(void *value)
 
 	{
 		BitFlags<192> mask(BitFlags<192>::kInit, 93, 96);
-		if (object->isAnyKindOf(mask))
+		if (object->isAnyKindOf(*reinterpret_cast<const BitFlags<116> *>(&mask)))
 		{
 			if (object->getDrawable() != 0)
 				object->getDrawable()->bfmeSet(true);
@@ -407,7 +403,7 @@ void Rva21ABF0Worker::visit(void *value)
 	if (moduleData->m_unknown153)
 	{
 		m_dispatch.slot36(object, 0);
-		Rva21ABF0PhysicsBehavior *physics = object->getPhysicsBehavior();
+		PhysicsBehavior *physics = object->getPhysicsBehavior();
 		if (physics != 0)
 		{
 			Vector3 scaled(object->m_forceScaleX, object->m_forceScaleY, 1.0f);
