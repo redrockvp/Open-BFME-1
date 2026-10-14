@@ -5,7 +5,7 @@
 // declarations local so the original out-of-line VectorClass constructor call
 // is preserved by the compiler.
 
-#include <new.h>
+#include <new>
 
 extern void *__cdecl operator new[](size_t size);
 extern void __cdecl operator delete[](void *pointer);
