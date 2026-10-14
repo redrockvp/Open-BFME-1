@@ -49007,6 +49007,7 @@ object_symbol	targets/game/reverse/functions.csv	0x00C5FE4A	1	allow=546ba476f7ce
 object_symbol	targets/game/reverse/functions.csv	0x00C5FE5D	1	allow=ff2249bbc7cedf64fedc022a583b08b72a991f05
 object_symbol	targets/game/reverse/functions.csv	0x00C5FE68	1	allow=bace4cd6edffeeb2b85265688406f75fd51fb60a
 object_symbol	targets/game/reverse/functions.csv	0x00C5FE70	1	allow=a09b7dfc1e9e2724f71c8d89afea62caaadd4ec7
+object_symbol	targets/game/reverse/functions.csv	0x00C5FE7B	1	allow=12478cdc5507f3bbed8c9595ac2e3f488f118e15
 object_symbol	targets/game/reverse/functions.csv	0x00C5FED0	1
 object_symbol	targets/game/reverse/functions.csv	0x00C5FEDB	1
 object_symbol	targets/game/reverse/functions.csv	0x00C5FF1A	1
