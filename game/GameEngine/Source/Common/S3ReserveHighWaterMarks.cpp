@@ -1,6 +1,6 @@
 // cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc /I game/Libraries/Source/WWVegas/WWLib /I game/Libraries/Source/WWVegas/WW3D2 /I game/Libraries/Source/WWVegas/WWDebug /I game/Libraries/Source/WWVegas/WWMath
 
-#include <new.h>
+#include <new>
 
 extern void *__cdecl operator new[](size_t size);
 extern void __cdecl operator delete[](void *pointer) throw();
