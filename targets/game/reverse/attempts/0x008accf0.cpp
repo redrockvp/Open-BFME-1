@@ -1,5 +1,5 @@
 // ?bfmeLookup008ACCF0@@YAHPAUBfmeLookupObject008ACCF0@@PAUBfmeLookupString008ACCF0@@E@Z
-// partial score=0.55 date=2026-09-03
+// partial score=0.2266 date=2026-09-03
 // Open-BFME5 conversion.
 
 int bfmeCompareVSC(const char *a, const char *b);
