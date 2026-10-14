@@ -857,6 +857,9 @@ address_global	game/GameEngine/Source/GameLogic/Object/Update/AIUpdate/GiantBird
 address_global	game/GameEngine/Source/GameLogic/Object/Update/AIUpdate/GiantBirdGuardStateConstructors.cpp	g_Rva010C74D4	3
 address_global	game/GameEngine/Source/GameLogic/Object/Update/AIUpdate/Rva002BC310HeightPredicate.cpp	g_Rva01095F98	2
 address_global	game/GameEngine/Source/GameLogic/Object/Update/AttributeModifierAuraUpdateModuleDataCtorThunk.cpp	g_Rva0107301CEmptyString	2
+address_global	game/GameEngine/Source/GameLogic/Object/Update/AutoFindHealingUpdateVtables.cpp	g_Va010BB2F0	1	allow=8b811c07b848e0e62c11cdce9fdc6cb541dec3e9
+address_global	game/GameEngine/Source/GameLogic/Object/Update/AutoFindHealingUpdateVtables.cpp	g_Va010BB300	1	allow=8b811c07b848e0e62c11cdce9fdc6cb541dec3e9
+address_global	game/GameEngine/Source/GameLogic/Object/Update/AutoFindHealingUpdateVtables.cpp	g_Va010BB3C4	1	allow=8b811c07b848e0e62c11cdce9fdc6cb541dec3e9
 address_global	game/GameEngine/Source/GameLogic/Object/Update/BfmeObjectReferenceStoreClear.cpp	g_Rva0107301CEmptyString	2
 address_global	game/GameEngine/Source/GameLogic/Object/Update/FlammableUpdateParseFireFXList.cpp	g_Rva0107301CEmptyString	2
 address_global	game/GameEngine/Source/GameLogic/Object/Update/ProductionUpdateModuleDataCtor.cpp	g_Rva0107301CEmptyString	2
