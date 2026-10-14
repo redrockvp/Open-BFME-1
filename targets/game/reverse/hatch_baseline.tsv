@@ -28115,6 +28115,7 @@ object_symbol	targets/game/reverse/functions.csv	0x00C132C0	1
 object_symbol	targets/game/reverse/functions.csv	0x00C132CB	1
 object_symbol	targets/game/reverse/functions.csv	0x00C132E0	1
 object_symbol	targets/game/reverse/functions.csv	0x00C132E8	1
+object_symbol	targets/game/reverse/functions.csv	0x00C132F6	1	allow=304058f5f5b812b2e748b91ce392ff387fea4245
 object_symbol	targets/game/reverse/functions.csv	0x00C1330E	1
 object_symbol	targets/game/reverse/functions.csv	0x00C13330	1
 object_symbol	targets/game/reverse/functions.csv	0x00C1333E	1
