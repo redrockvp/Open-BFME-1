@@ -1,6 +1,8 @@
-// ?d_00893b30@@YAXXZ
-// partial score=0.72 date=2026-09-07
-// cl: /DNDEBUG /MD /EHs-c-
+// ?Rva00893B30ResizeItems@@YAPAURva00892640Item@@PAU1@HH@Z
+// partial score=0.4451 date=2026-10-14
+// ?Rva00893B30ResizeItems@@YAPAURva00892640Item@@PAU1@HH@Z
+// partial: 326B vs 346B, EH prologue form now matches
+// cl: /DNDEBUG /MD /EHsc
 
 struct BfmeStringData3AF0
 {
@@ -31,25 +33,26 @@ Rva00892640Item *Rva00893B30ResizeItems(
 	if (data == 0)
 		return new Rva00892640Item[new_capacity];
 
-	Rva00892640Item *replacement = new Rva00892640Item[new_capacity];
+	Rva00892640Item *replacement = 0;
+	if (new_capacity != 0)
+		replacement = new Rva00892640Item[new_capacity];
 	int count = logical_count;
 	if (new_capacity < count)
 		count = new_capacity;
 	if (count != 0)
 	{
-		Rva00892640Item *source = data;
 		Rva00892640Item *destination = replacement;
 		do
 		{
-			BfmeStringData3AF0 *incoming = source->m_handle;
+			BfmeStringData3AF0 *incoming = data->m_handle;
 			++incoming->m_refs;
 			BfmeStringData3AF0 *old = destination->m_handle;
 			--old->m_refs;
 			if (old->m_refs == 0)
 				g_bfmeStringPool1284->m_destroy(old);
-			destination->m_handle = source->m_handle;
-			destination->m_extra = source->m_extra;
-			++source;
+			destination->m_handle = data->m_handle;
+			destination->m_extra = data->m_extra;
+			++data;
 			++destination;
 		}
 		while (--count != 0);
