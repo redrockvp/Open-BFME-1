@@ -12,6 +12,7 @@
 
 // Retail calls the array allocator 0x00881F70 at both new[] sites.
 void *__cdecl operator new[](unsigned int);
+void __cdecl operator delete[](void *);
 
 extern void j_0003a328(void);
 extern void j_00014c5e(void);
