@@ -1,5 +1,8 @@
 // ?method@Rva0040AC30Owner@@QAEXHH@Z
-// partial score=1.0 date=2026-10-14
+// Address-derived method of Rva0040AC30Owner (retail 0x0040AC30, 244 B, ret 8, void): looks up
+// or creates the shared material pass in the global tree at 0x012F10DC, then allocates a
+// second private pass. The retail body returns nothing, so it is a plain method rather than
+// a constructor; the value reload before the flag store keeps the pass in eax.
 // cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc /D_STLP_USE_STATIC_LIB
 // stlport
 
@@ -28,11 +31,8 @@ public:
 	int m_bfme44;
 };
 
-class State;
-
-// The shared tree is spelled twice, as the recorded callees spell it: retail reaches its find
-// through the State* instantiation's body (StateMachine.cpp) and its insert_unique through the
-// four-byte-value instantiation (RvaTreeInsertUniqueUnsigned.cpp).
+// The shared tree is the four-byte-value instantiation the recorded insert_unique callee spells
+// (RvaTreeInsertUniqueUnsigned.cpp); its find<unsigned> is reached through ILT 0x00005560.
 struct Rva0040AAD0Value
 {
 	char m_body[ 4 ];
@@ -45,14 +45,11 @@ typedef _STL::_Rb_tree<unsigned int,
 	_STL::less<unsigned int>,
 	_STL::allocator<Rva0040AAD0Pair> > Rva0040AAD0Tree;
 
-typedef _STL::pair<const unsigned int, State *> Rva0040AC30Pair;
-typedef _STL::_Rb_tree<unsigned int,
-	Rva0040AC30Pair,
-	_STL::_Select1st<Rva0040AC30Pair>,
-	_STL::less<unsigned int>,
-	_STL::allocator<Rva0040AC30Pair> > Rva0040AC30Tree;
-
-extern Rva0040AC30Tree g_rva012F10DCTree;	// @0x012F10DC, shared with Rva0040AD80ReferenceState.cpp
+// 0x012F10DC holds the tree instance; retail's dynamic initializer (0x00C6B3D0) constructs it, so
+// the one definition of the storage is the init struct in Rva00C6B390StaticInitializers.cpp
+// (shared with Rva0040AD80ReferenceState.cpp), viewed here as the tree.
+struct Rva00C6B3D0Init;
+extern Rva00C6B3D0Init g_rva012F10DC;
 
 class Rva0040AC30Owner
 {
@@ -69,20 +66,20 @@ private:
 // Open BFME 2: Code/GameEngine/Source/GameClient/Rva0040AD80ReferenceState_Rva00362c9f.cpp
 void Rva0040AC30Owner::method(int a1, int a2)
 {
-	Rva0040AC30Tree::iterator it = g_rva012F10DCTree.find(reinterpret_cast<const unsigned int &>(a1));
-	if (it == g_rva012F10DCTree.end())
+	Rva0040AAD0Tree::iterator it = reinterpret_cast<Rva0040AAD0Tree &>(g_rva012F10DC).find(reinterpret_cast<const unsigned int &>(a1));
+	if (it == reinterpret_cast<Rva0040AAD0Tree &>(g_rva012F10DC).end())
 	{
 		Bfme5MaterialPass *material = new Bfme5MaterialPass(a1, a2);
 		m_secondReferent = material;
 		Rva0040AAD0Value value;
 		*reinterpret_cast<Bfme5MaterialPass **>(&value) = material;
-		reinterpret_cast<Rva0040AAD0Tree &>(g_rva012F10DCTree).insert_unique(Rva0040AAD0Pair(static_cast<unsigned int>(a1), value));
+		reinterpret_cast<Rva0040AAD0Tree &>(g_rva012F10DC).insert_unique(Rva0040AAD0Pair(static_cast<unsigned int>(a1), value));
 		Bfme5MaterialPass *reload = m_secondReferent;
 		reload->m_bfme40 = 1;
 	}
 	else
 	{
-		m_secondReferent = reinterpret_cast<Bfme5MaterialPass *>(it->second);
+		m_secondReferent = *reinterpret_cast<Bfme5MaterialPass **>(&it->second);
 		++*(int *)((char *)m_secondReferent + 4);
 	}
 	m_firstReferent = new Bfme5MaterialPass(a1, a2);
