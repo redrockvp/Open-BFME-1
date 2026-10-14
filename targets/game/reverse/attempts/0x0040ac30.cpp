@@ -1,5 +1,5 @@
-// ??0Rva0040AC30Owner@@QAE@HH@Z
-// partial score=0.9303 date=2026-10-10
+// ?method@Rva0040AC30Owner@@QAEXHH@Z
+// partial score=1.0 date=2026-10-14
 // cl: /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc /D_STLP_USE_STATIC_LIB
 // stlport
 
@@ -28,8 +28,24 @@ public:
 	int m_bfme44;
 };
 
-typedef _STL::pair<const unsigned int, Bfme5MaterialPass *> Rva0040AC30Pair;
+class State;
 
+// The shared tree is spelled twice, as the recorded callees spell it: retail reaches its find
+// through the State* instantiation's body (StateMachine.cpp) and its insert_unique through the
+// four-byte-value instantiation (RvaTreeInsertUniqueUnsigned.cpp).
+struct Rva0040AAD0Value
+{
+	char m_body[ 4 ];
+};
+
+typedef _STL::pair<const unsigned int, Rva0040AAD0Value> Rva0040AAD0Pair;
+typedef _STL::_Rb_tree<unsigned int,
+	Rva0040AAD0Pair,
+	_STL::_Select1st<Rva0040AAD0Pair>,
+	_STL::less<unsigned int>,
+	_STL::allocator<Rva0040AAD0Pair> > Rva0040AAD0Tree;
+
+typedef _STL::pair<const unsigned int, State *> Rva0040AC30Pair;
 typedef _STL::_Rb_tree<unsigned int,
 	Rva0040AC30Pair,
 	_STL::_Select1st<Rva0040AC30Pair>,
@@ -41,7 +57,6 @@ extern Rva0040AC30Tree g_rva012F10DCTree;	// @0x012F10DC, shared with Rva0040AD8
 class Rva0040AC30Owner
 {
 public:
-	Rva0040AC30Owner(int a1, int a2);
 	void method(int a1, int a2);
 
 private:
@@ -52,19 +67,22 @@ private:
 };
 
 // Open BFME 2: Code/GameEngine/Source/GameClient/Rva0040AD80ReferenceState_Rva00362c9f.cpp
-Rva0040AC30Owner::Rva0040AC30Owner(int a1, int a2)
+void Rva0040AC30Owner::method(int a1, int a2)
 {
 	Rva0040AC30Tree::iterator it = g_rva012F10DCTree.find(reinterpret_cast<const unsigned int &>(a1));
 	if (it == g_rva012F10DCTree.end())
 	{
 		Bfme5MaterialPass *material = new Bfme5MaterialPass(a1, a2);
 		m_secondReferent = material;
-		g_rva012F10DCTree.insert_unique(Rva0040AC30Pair(static_cast<unsigned int>(a1), material));
-		m_secondReferent->m_bfme40 = 1;
+		Rva0040AAD0Value value;
+		*reinterpret_cast<Bfme5MaterialPass **>(&value) = material;
+		reinterpret_cast<Rva0040AAD0Tree &>(g_rva012F10DCTree).insert_unique(Rva0040AAD0Pair(static_cast<unsigned int>(a1), value));
+		Bfme5MaterialPass *reload = m_secondReferent;
+		reload->m_bfme40 = 1;
 	}
 	else
 	{
-		m_secondReferent = it->second;
+		m_secondReferent = reinterpret_cast<Bfme5MaterialPass *>(it->second);
 		++*(int *)((char *)m_secondReferent + 4);
 	}
 	m_firstReferent = new Bfme5MaterialPass(a1, a2);
