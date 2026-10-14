@@ -25,14 +25,6 @@ class Bfme5CtorA0
 {
 public:
 	enum MagicEnum { GLUE_NOT_IMPLEMENTED = 0 };
-	static void *operator new(unsigned int size, MagicEnum, const char *)
-	{
-		return ::operator new(size);
-	}
-	static void operator delete(void *pointer, MagicEnum, const char *)
-	{
-		::operator delete(pointer);
-	}
 
 	Bfme5CtorA0();
 	virtual ~Bfme5CtorA0();
@@ -97,7 +89,7 @@ void ScriptActions::doUnitStartSequentialScript(ScriptActionParameter *unitParam
 	if (!script)
 		return;
 
-	Bfme5CtorA0 *sequentialScript = new(Bfme5CtorA0::GLUE_NOT_IMPLEMENTED, "") Bfme5CtorA0;
+	Bfme5CtorA0 *sequentialScript = new Bfme5CtorA0;
 	sequentialScript->m_objectID = object->getId();
 	AsciiString *nameA = &sequentialScript->m_nameA;
 	nameA->StringBase<char>::set(scriptNameOut);
