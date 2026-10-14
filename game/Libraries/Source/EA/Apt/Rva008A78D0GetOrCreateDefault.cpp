@@ -52,7 +52,13 @@ public:
 	void bfmeTruncVKK(unsigned n);
 };
 
-class Rva008A9B00
+class Gen_uws16_00891a80
+{
+public:
+	static void operator delete(void *memory, unsigned int bytes);
+};
+
+class Rva008A9B00 : public Gen_uws16_00891a80
 {
 public:
 	Rva008A9B00();
