@@ -36,6 +36,11 @@
 #include "Common/TunnelTracker.h"
 #include "GameLogic/CaveSystem.h"
 
+// Retail allocates the tracker with the global operator new, so a failed constructor frees it
+// through the one-argument ::operator delete rather than the pool glue pair.
+#undef newInstance
+#define newInstance(ARGCLASS) ::new ARGCLASS
+
 CaveSystem *TheCaveSystem = NULL;
 
 // BFME's Xfer ABI differs from the Generals header used by the rest of the
