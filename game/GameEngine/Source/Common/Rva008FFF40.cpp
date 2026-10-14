@@ -1,6 +1,8 @@
-// ?Rva008FFF40@Rva00900FF0@@UAEXXZ
-// partial score=1.0 date=2026-10-13
-// ?Rva008FFF40@Rva00900FF0@@UAEXXZ
+// Rva00900FF0 vtable slot 3 (0x008FFF40, 889 B) and the private water-track helper it
+// calls (0x008FF0F0, 181 B).  The helper and the two statics below it use compiler-private
+// register conventions that only a same-TU body reproduces; 0x008FF060 and 0x008FEF60 are
+// ledgered in their own rows, the copies here exist for the calling convention.
+// The helper hoists the renderer name into a local before comparing it with the mesh name.
 // stlport
 // cl: /O2 /DNDEBUG /DWIN32 /D_WINDOWS /MD /EHsc /D_STLP_USE_STATIC_LIB /Igame/Libraries/Source/WWVegas/WWMath /Igame/Libraries/Source/WWVegas/WWLib /Igame/Libraries/Source/WWVegas/WWDebug /Igame/Libraries/Source/WWVegas/WWSaveLoad /Igame/Libraries/Source/WWVegas/WW3D2 /Igame/Libraries/Source/Compression /Iinputs/reference/shims/sweep
 
@@ -196,8 +198,8 @@ extern RenderObjClass *Create_Render_Obj(const char *name);
 extern void Rva008FEB90(RenderObjClass *object);
 
 
-void Rva008FF6A0(RenderObjClass *object, Rva00900FF0InnerVector *first,
-	Rva00900FF0InnerVector *second, int source);
+void Rva008FF6A0(RenderObjClass *object, const Rva00900FF0InnerVector &first,
+	const Rva00900FF0InnerVector &second, int source);
 
 
 class BfmeHandleCX
@@ -297,7 +299,8 @@ static __declspec(noinline) bool Rva008FF0F0Method(RenderObjClass *object, Rva00
     char *meshName=(char *)first->back().c_str();
     char *textureName=(char *)second->back().c_str();
     bool result=false;
-    if (strcmp(object->Get_Name(),meshName)==0)
+    const char *objectName=object->Get_Name();
+    if (strcmp(objectName,meshName)==0)
         result=Rva008FF060Method(object,textureName,index);
     else {
         RenderObjClass *sub=object->Get_Sub_Object_By_Name(meshName);
@@ -376,7 +379,7 @@ void Rva00900FF0::Rva008FFF40(void)
     } else if(!m_vec40.empty()) {
         Rva008FEB90(m_render70);
         for(unsigned i=0;i<m_vec40.size();++i)
-            Rva008FF6A0(m_render70,m_vec40.begin()+i,m_vec4c.begin()+i,m_vector58.m_start[i]);
+            Rva008FF6A0(m_render70,*(m_vec40.begin()+i),*(m_vec4c.begin()+i),m_vector58.m_start[i]);
     } else if(hasBoth) {
         Rva008FEB90(m_render70);
         char *textureName=(char *)m_vec28.back().c_str();
