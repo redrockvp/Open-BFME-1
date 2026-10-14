@@ -5,7 +5,7 @@
 // addRef/releases the record's second word, which is why the element is not
 // spelled from parameter.h's StringClass+int layout.
 
-#include <new.h>
+#include <new>
 
 extern void *__cdecl operator new[](size_t size);
 extern void __cdecl operator delete[](void *pointer);
